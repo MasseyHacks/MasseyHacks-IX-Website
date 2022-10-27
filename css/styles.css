@@ -32,11 +32,11 @@ time, mark, audio, video {
     background-color: var(--bg-colour);
     --color-bg: #ddd;
     --color-text: #1a1e24;
-    --color-text-subtle: #D76D77;
+    --color-text-subtle: #8F98FF;
 
     padding: 0; margin: 0;
-    background: -webkit-linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
-    background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+    background: -webkit-linear-gradient(to right, #8F98FF, #ABFF80, #8EEAE3, #E3C3FE);
+    background: linear-gradient(to right,  #8F98FF, #ABFF80, #8EEAE3, #E3C3FE);
     width: 100%;
     min-height: 100vh;
     display: -webkit-box; display: -ms-flexbox; display: flex;
@@ -100,4 +100,3 @@ footer {
 .footer-social a {
     color: white;
 }
-
