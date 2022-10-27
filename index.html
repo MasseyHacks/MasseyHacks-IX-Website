@@ -1,61 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MasseyHacks IX</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MasseyHacks IX</title>
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
+    integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+
+  <!-- Termynal -->
+  <link rel="stylesheet" href="termynal.css">
 
 
 </head>
+
 <body>
 
 
-<!-- Navigation Menu -->
-<header>
+  <!-- Navigation Menu -->
+  <header>
     <nav>
-    
+
     </nav>
-</header>
+  </header>
 
-<!-- Hero -->
-<section id="hero">
+  <!-- Hero -->
+  <section id="hero">
 
-</section>
+  </section>
 
-<!-- About -->
-<section id="about">
-
-</section>
-
-<!-- Testimonials -->
-<section id="testimonials">
+  <!-- About -->
+  <section id="about">
     
-</section>
+    <!-- the termynal container -->
+    <div id="termynal" data-termynal data-ty-typeDelay="40" data-ty-lineDelay="700">
+      <span data-ty="input" data-ty-prompt="▲">Canada's Oldest High School Hackathon?</span>
+      <span data-ty="input" data-ty-typeDelay="1000" data-ty-prompt="(y/n)">y</span>
+      <span data-ty="input" data-ty-prompt="▲" data-ty-typeDelay="40">200+ Students of all Backgrounds</span>
+      <span data-ty="input" data-ty-prompt="▲">Compete in Teams of up to Four!</span>
+      <span data-ty="input" data-ty-prompt=">">Array(4).fill('🥼')</span>
+      <span data-ty>['🥼', '🥼', '🥼', '🥼']</span>
+      <span data-ty="input" data-ty-prompt="▲">cd ~/prizes</span>
+      <span data-ty="input" data-ty-prompt="▲ ~/repos"> git checkout branch master</span>
+      <span data-ty="input" data-ty-prompt="▲ ~/repos (master)">git commit -m "Epic Prizes!"</span>
+      <span data-ty="progress" data-ty-progressChar="$"></span>
+      <span data-ty>  - - - - - - - - $21,000+ in Prizes - - - - -  - - - </span>
+    </div>
 
-<!-- FAQ -->
-<section id="faq">
+    <!-- include and initialise termynal.js -->
+    <script src="termynal.js" data-termynal-container="#termynal"></script>
+  </section>
 
-</section>
+  <!-- Testimonials -->
+  <section id="testimonials">
 
-<!-- Sponsors -->
-<section id="sponsors">
+  </section>
 
-</section>
+  <!-- FAQ -->
+  <section id="faq">
+
+  </section>
+
+  <!-- Sponsors -->
+  <section id="sponsors">
+
+  </section>
 
 
-<!-- Footer -->
-<footer id="footer">
+  <!-- Footer -->
+  <footer>
+    <div class="container my-0 px-5">
+        <div class="row footer py-5 justify-content-between">
+            <div class="col-lg-5 col-xxl-4 text-left">
+                <!-- <img class="footer-logo" src="images/logo.svg"> -->
+                <h1 class="footer-title my-3">MasseyHacks VIII</h1>
+                <!--a href="mailto:hello@masseyhacks.ca" class="footer-link" target="_blank" style="font-size: clamp(1rem, 1rem, 1.5rem);"> hello@masseyhacks.ca </a-->
+                <p class="footer-address">
+                    Vincent Massey Secondary School
+                    <br>
+                    1800 Liberty St, Windsor, ON N9E 1J2
+                    <br>
+                </p>
+                <p class="copyright-text">
+                    Copyright &copy; 2022 MasseyHacks
+                    <br>
+                    &lt;/&gt; made by the MasseyHacks Team with <i class="fas fa-coffee"></i>
+                </p>
+            </div>
+            <div class="col-lg-2 justify-content-center align-items-center footer-nav">
+                <div class="footer-links mt-2 d-inline-block text-left">
+                    <a class="footer-link" href="#hero">Home</a>
+                    <br>
+                    <a class="footer-link" href="#about">About</a>
+                    <br>
+                    <a class="footer-link" href="#timeline">Timeline</a>
+                    <br>
+                    <a class="footer-link" href="#faq">FAQ</a>
+                    <br>
+                    <a class="footer-link" href="#sponsors">Sponsors</a>
+                    <br>
+                    <a class="footer-link" href="#partners">Partners</a>
+                </div>
+            </div>
+            <div class="col-lg-5 d-flex align-items-center justify-content-center">
+                <div class="d-inline-block text-left footer-email-social">
 
+                    <!-- Begin Mailchimp Signup Form -->
+                    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet"
+                          type="text/css">
+                    <div>
+                        <div id="mc_embed_signup" class="d-block w-100 text-left">
+                            <form action="https://masseyhacks.us17.list-manage.com/subscribe/post?u=a94f560f49609f97702adaac7&amp;id=9434a090dc"
+                                  method="post" id="mc-embedded-subscribe-form"
+                                  name="mc-embedded-subscribe-form" class="validate p-0"
+                                  target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll">
+                                    <div class="mc-field-group m-0 w-100">
+                                        <label for="mce-EMAIL"><h4>Join our mailing list!</h4></label>
+                                        <div class="row mt-3 mx-0">
+                                            <div class="col p-0">
+                                                <input type="email" value="" name="EMAIL" class="required email"
+                                                       id="mce-EMAIL" placeholder="Email address">
+                                            </div>
+                                            <div class="col-4 p-0 fit-content">
+                                                <div class="optionalParent h-100 fit-content">
+                                                    <div class="clear foot d-block h-100">
+                                                        <input type="submit" value="Sign Up" name="subscribe"
+                                                               id="mc-embedded-subscribe"
+                                                               class="button p-0 ms-2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                        <input type="text" name="b_a94f560f49609f97702adaac7_9434a090dc"
+                                               tabindex="-1" value="">
+                                    </div>
+
+
+                                </div>
+                                <script type='text/javascript'
+                                        src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                                <script type='text/javascript'>(function ($) {
+                                    window.fnames = new Array();
+                                    window.ftypes = new Array();
+                                    fnames[0] = 'EMAIL';
+                                    ftypes[0] = 'email';
+                                    fnames[1] = 'FNAME';
+                                    ftypes[1] = 'text';
+                                    fnames[2] = 'LNAME';
+                                    ftypes[2] = 'text';
+                                    fnames[3] = 'ADDRESS';
+                                    ftypes[3] = 'address';
+                                    fnames[4] = 'PHONE';
+                                    ftypes[4] = 'phone';
+                                    fnames[5] = 'MMERGE5';
+                                    ftypes[5] = 'text';
+                                    fnames[6] = 'MMERGE6';
+                                    ftypes[6] = 'text';
+                                    fnames[7] = 'MMERGE7';
+                                    ftypes[7] = 'number';
+                                    fnames[8] = 'MMERGE8';
+                                    ftypes[8] = 'text';
+                                    fnames[9] = 'MMERGE9';
+                                    ftypes[9] = 'date';
+                                }(jQuery));
+                                var $mcj = jQuery.noConflict(true);
+                                </script>
+                                <!--End mc_embed_signup-->
+                            </form>
+                        </div>
+                    </div>
+                    <div class="d-block">
+                        <div class="row footer-social justify-content-left pt-2">
+                            <div class="col">
+                                <a href="mailto:hello@masseyhacks.ca" target="_blank">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://instagram.com/masseyhacks" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://twitter.com/masseyhacks" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.youtube.com/channel/UCTYmXP2HjkqhLV1OW4EDW5Q"
+                                   target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.facebook.com/masseyhacks" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="mlh-code-of-conduct footer-link" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                       target="_blank">MLH Code of Conduct</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 
@@ -65,14 +230,19 @@
 
 
 
-<!-- main.js -->
-<script src="js/main.js"></script>
+  <!-- main.js -->
+  <script src="js/main.js"></script>
 
-<!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
 
-<!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
+
 </html>
