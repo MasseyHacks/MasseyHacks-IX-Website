@@ -130,12 +130,15 @@ body {
   padding: 5px;
   color: white;
 }
-.timer {
+.timer-border {
   border: solid;
+  border-color: black;
   width: 100%;
   display: flex;
+
   justify-content: center;
 }
+
 ::-webkit-scrollbar {
   width: 0.5rem;
   height: auto;
