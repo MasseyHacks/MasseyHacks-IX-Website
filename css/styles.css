@@ -163,10 +163,6 @@ body {
   background: #333;
 }
 
-p {
-  font-size: 1.1rem;
-}
-
 .unstyled-list {
   list-style: none;
   margin-left: 0;
@@ -187,7 +183,7 @@ nav {
   left: 3rem;
   top: 3rem;
   z-index: 1000;
-  background-color: black;
+
   border-radius: 5%;
 
   padding: 0.3rem;
@@ -196,7 +192,6 @@ nav {
 }
 
 .nav-active {
-  background-color: gray;
   border-radius: 3%;
   opacity: 0.8;
 }
@@ -205,17 +200,13 @@ nav {
 .nav-burger {
   display: block;
   cursor: pointer;
-  padding: 0
-    calc(
-      (
-          (var(--nav-burger-width)) * 0.7071067812 -
-            var(--nav-burger-line-height) * 2
-        ) / 2
-    );
+
+  padding: 1rem;
 }
 
 .nav-burger > div {
-  background-color: red;
+  background-color: black;
+
   width: var(--nav-burger-width);
   height: var(--nav-burger-line-height);
   margin: calc(
@@ -345,6 +336,8 @@ nav {
   margin-bottom: 1em;
   padding: 1em;
   flex-wrap: wrap;
+}
+.glass_card {
   border-radius: 1em;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
