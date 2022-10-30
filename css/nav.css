@@ -15,8 +15,8 @@ nav {
   display: flex;
   flex-direction: column;
   position: fixed;
-  left: 3rem;
-  top: 3rem;
+  left: 2rem;
+  top: 2rem;
   z-index: 1000;
 
   border-radius: 5%;
@@ -36,7 +36,7 @@ nav {
   display: block;
   cursor: pointer;
 
-  padding: 1rem;
+  padding: 0.5rem 0.8rem;
 }
 
 .nav-burger > div {

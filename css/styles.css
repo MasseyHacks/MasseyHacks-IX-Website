@@ -4,6 +4,7 @@
   /* Colours */
   --bg-colour: #ffffff;
   --nav-burger-width: clamp(2rem, 2.5rem, 3rem);
+  /* --nav-burger-width: clamp(4rem, 4rem, 4rem); */
   --nav-burger-line-height: max(
     0.3rem,
     calc((var(--nav-burger-width) * 0.4) / 3)
@@ -126,26 +127,3 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-::-webkit-scrollbar {
-  width: 0.5rem;
-  height: auto;
-  position: absolute;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 1rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #777;
-  border-radius: 0.2rem;
-  width: 80%;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-::-webkit-scrollbar-thumb:active {
-  background: #333;
-}
