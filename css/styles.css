@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 :root {
   /* Colours */
   --bg-colour: #ffffff;
@@ -98,10 +100,8 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
 body {
-  @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-  font-family: IBM Plex Sans, sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   /*background-color: var(--bg-colour); */
   background: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2545.jpg?w=2000")
     no-repeat fixed center;
@@ -124,6 +124,12 @@ body {
   margin-right: auto;
   gap: 5px;
 }
+
+#hero > h1 {
+  font-weight: bold !important;
+  font-family: 'IBM Plex Sans';
+}
+
 #hero button {
   background-color: black;
   width: 100%;
