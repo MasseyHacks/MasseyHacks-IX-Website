@@ -1,0 +1,55 @@
+.footer-nav {
+    display: none;
+}
+
+.footer-link {
+    text-decoration: none !important;
+    color: white !important;
+    font-size: clamp(1rem, 1.25rem, 2rem);
+    font-weight: 600;
+}
+
+footer a::after {
+    background-color: white !important;
+}
+
+footer {
+    text-align: center !important;
+}
+
+footer {
+    background: #111;
+    color: white;
+}
+
+.footer {
+    height: fit-content;
+}
+
+.footer-title {
+    font-size: clamp(2rem, 2.5rem, 3rem);
+}
+
+.footer-address {
+    font-size: clamp(1rem, 1rem, 1.5rem);
+}
+
+.footer-logo {
+    height: 15vh;
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.footer-email-social {
+    width: 75%;
+}
+
+.footer-social {
+    font-size: 2rem;
+}
+
+.footer-social a {
+    color: white;
+}

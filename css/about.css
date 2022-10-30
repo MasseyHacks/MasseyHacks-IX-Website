@@ -1,0 +1,13 @@
+#about{
+    --color-bg: #ddd;
+    --color-text: #1a1e24;
+    --color-text-subtle: #8F98FF;
+
+    padding: 0; margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box; display: -ms-flexbox; display: flex;
+    -webkit-box-align: center; -ms-flex-align: center; align-items: center;
+    -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
