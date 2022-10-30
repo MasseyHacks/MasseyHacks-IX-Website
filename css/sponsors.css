@@ -1,13 +1,17 @@
-#sponsors {
+#sponsors #partners {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-#sponsors h1 {
+#sponsors h1, #partners h1 {
+  font-weight: bold;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   display: flex;
   justify-content: center;
+  margin: 2rem;
 }
 
 .sponsor_prompt {
@@ -41,11 +45,7 @@
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-#sponsors h1 {
-  font-weight: bold;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
+
 @media only screen and (min-width: 768px) {
   .gold,
   .bronze,
