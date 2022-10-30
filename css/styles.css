@@ -104,8 +104,17 @@ video {
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   /*background-color: var(--bg-colour); */
-  background: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2545.jpg?w=2000")
-    no-repeat fixed center;
+  /* background: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2545.jpg?w=2000")
+    no-repeat fixed center; */
+  background: url(/assets/bg.svg) no-repeat fixed center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 .glass_card {
