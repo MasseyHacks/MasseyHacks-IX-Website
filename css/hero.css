@@ -1,0 +1,41 @@
+.logo {
+    /* TODO: fix size */
+    background-color: black;
+    width: 150px;
+    height: 150px;
+}
+
+#hero {
+    padding: 1em;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: max-content;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5px;
+}
+
+#hero > h1 {
+    font-weight: bold;
+    font-family: 'IBM Plex Sans';
+}
+
+#hero button {
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+    color: white;
+}
+
+.timer-border {
+    border: solid;
+    border-color: black;
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+}
