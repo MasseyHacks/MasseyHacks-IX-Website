@@ -98,12 +98,13 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
+
   font: inherit;
   vertical-align: baseline;
 }
 
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   /*background-color: var(--bg-colour); */
   /* background: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2545.jpg?w=2000")
     no-repeat fixed center; */
@@ -126,4 +127,3 @@ p {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
