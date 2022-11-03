@@ -108,7 +108,8 @@ body {
   /*background-color: var(--bg-colour); */
   /* background: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2545.jpg?w=2000")
     no-repeat fixed center; */
-  background: url(/assets/bg.svg) no-repeat fixed center;
+  background: url(/assets/bg.svg) no-repeat fixed center/100%;
+  width: 100%;
 }
 
 h1 {
