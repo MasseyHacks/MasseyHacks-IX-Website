@@ -1,39 +1,45 @@
 .hero-logo {
-    width: 20rem;
-    /* height: 150px; */
+  width: 18rem;
+  /* height: 150px; */
 }
 
 #hero {
-    padding: 1em;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: max-content;
-    height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 5px;
+  padding: 1em;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: max-content;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 5px;
 }
 
 #hero > h1 {
-    font-weight: bold;
-    font-family: 'IBM Plex Sans';
+  font-weight: bold;
+  font-family: "IBM Plex Sans";
 }
-
-#hero button {
-    background-color: black;
-    width: 100%;
-    padding: 5px;
-    color: white;
+.volunteer-btn a {
+  font-weight: bold;
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }
-
+.volunteer-btn a {
+  font-weight: bold;
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.mentor-btn a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
 .timer-border {
-    border: solid;
-    border-color: black;
-    width: 100%;
-    display: flex;
+  border: solid;
+  border-color: black;
+  width: 100%;
+  display: flex;
 
-    justify-content: center;
+  justify-content: center;
 }
