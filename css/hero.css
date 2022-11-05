@@ -28,18 +28,27 @@
 }
 .volunteer-btn a {
   font-weight: bold;
-  color: inherit; /* blue colors for links too */
+  color: white; /* blue colors for links too */
+  text-shadow: 2px 2px gray;
+
   text-decoration: inherit; /* no underline */
 }
 .mentor-btn a {
-  color: inherit; /* blue colors for links too */
+  color: white; /* blue colors for links too */
+  text-shadow: 2px 2px gray;
+
   text-decoration: inherit; /* no underline */
 }
 .timer-border {
   border: solid;
-  border-color: black;
+  border-color: white;
   width: 100%;
   display: flex;
-
   justify-content: center;
+}
+.hero-date {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #c1ecff;
+  text-shadow: 2px 2px gray;
 }

@@ -107,9 +107,8 @@ video {
 body {
   font-family: "IBM Plex Sans", sans-serif;
   /*background-color: var(--bg-colour); */
-  /* background: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2545.jpg?w=2000")
-    no-repeat fixed center; */
-  background: url(/assets/bg.svg) no-repeat fixed center/100%;
+
+  background: url(../assets/bg.svg) no-repeat fixed center/100%;
   width: 100%;
 }
 
@@ -122,15 +121,8 @@ p {
 }
 
 .glass_card {
-  border-radius: 1em;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: white;
+  border-radius: inherit;
 }
 
 section {
@@ -142,13 +134,16 @@ section > div {
 }
 
 button {
-  background-color: var(--dark-color);
+  /*background-color: var(--dark-color);*/
+  background-color: white;
   width: 100%;
   padding: 1em 1.5em;
-  color: white;
+  color: var(--dark-color);
   font-weight: 600;
   border: none;
+  font-weight: 700;
 }
 h1 {
-  color: var(--dark-color);
+  color: white;
+  text-shadow: 2px 2px gray;
 }

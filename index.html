@@ -31,6 +31,9 @@
   <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="css/about.css" />
   <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/timer.css" />
+
+
 </head>
 
 <body>
@@ -59,14 +62,20 @@
   <section id="hero">
     <img src="assets/logo.svg" alt="Logo" class="hero-logo">
     <h1> MasseyHacks IX </h1>
-    <p >May 6–7th, 2023</p>
+    <p class="hero-date">May 6–7th, 2023</p>
+    <br/>
     <div class="timer-border">
-      <h1 id="timer">
-      </h1>
+
+        <div class="countdown" data-date="12-4-2023" data-time="09:00">
+          <div class="day"><span class="num"></span><span class="word"></span></div>
+          <div class="hour"><span class="num"></span><span class="word"></span></div>
+          <div class="min"><span class="num"></span><span class="word"></span></div>
+          <div class="sec"><span class="num"></span><span class="word"></span></div>
     </div>
     
     </div>
     <button>APPLY NOW</button>
+    <br/>
     <p class="mentor-btn"><a href="https://www.reddit.com/">
       or apply to be a mentor here!
     </a></p>
@@ -101,11 +110,12 @@
   <!-- FAQ -->
   <section id="faq"></section>
 
+  </div>
 
   <!-- Sponsors -->
   <section id="sponsors">
     <h1>SPONSORS</h1>
-    <div class="glass_card sponsor_prompt">
+    <div class="glass_card rounded sponsor_prompt">
       <!-- Sponsorship Prompt -->
       <div>
         <p> Interested in becoming a sponsor? </p>
@@ -120,7 +130,7 @@
     </div>
 
     <!-- Gold Tier -->
-    <div class="glass_card  gold">
+    <div class="glass_card rounded gold">
       <a href="https://www.wetech-alliance.com/" target="_blank"><img alt="We-Tech Alliance" class="zoom"
           src="images/sponsors/silver/wetech.png"></a>
       <a href="https://www.wetech-alliance.com/" target="_blank"><img alt="We-Tech Alliance" class="zoom"
@@ -128,7 +138,7 @@
     </div>
 
     <!-- Silver Tier -->
-    <div class=" glass_card silver ">
+    <div class=" glass_card rounded silver ">
       <a href="https://www.wetech-alliance.com/" target="_blank"><img alt="We-Tech Alliance" class="zoom"
           src="images/sponsors/silver/wetech.png"></a>
       <a href="https://www.wetech-alliance.com/" target="_blank"><img alt="We-Tech Alliance" class="zoom"
@@ -136,7 +146,7 @@
     </div>
 
     <!-- Bronze Tier -->
-    <div class="glass_card  bronze ">
+    <div class="glass_card rounded bronze ">
       <a href="https://www.wfcu.ca" target="_blank"><img alt="WFCU" class="zoom"
           src="images/sponsors/bronze/wfcu.png"></a>
 
@@ -147,7 +157,7 @@
   <section id="partners">
     <!-- Partners -->    
     <h1>PARTNERS</h1>
-    <div class="glass_card partner">
+    <div class="glass_card rounded partner">
       <a href="https://www.wfcu.ca" target="_blank"><img alt="WFCU" class="zoom"
             src="images/sponsors/bronze/wfcu.png"></a>
       <a href="https://www.wfcu.ca" target="_blank"><img alt="WFCU" class="zoom"
@@ -303,7 +313,11 @@
     
 
   <!-- main.js -->
-  <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript"  src="js/countdown.js"></script>  
+  <script type="text/javascript" src="js/init.js"></script>
+
+
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
@@ -311,6 +325,7 @@
     crossorigin="anonymous"></script>
 
   <!-- jquery -->
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
