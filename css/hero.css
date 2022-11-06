@@ -9,7 +9,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   width: max-content;
   height: 100vh;
   margin-left: auto;
