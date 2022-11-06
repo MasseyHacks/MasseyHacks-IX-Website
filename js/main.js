@@ -15,3 +15,4 @@ const toggleNavLinks = () => {
     navBurgerNode.style.borderRadius = "1rem";
   }
 };
+

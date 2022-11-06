@@ -3,23 +3,30 @@
 }
 
 #hero {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+#hero > div {
   padding: 1em;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: max-content;
-  height: 100vh;
   margin-left: auto;
   margin-right: auto;
+  padding: 3rem 4rem 2rem 4rem;
+  margin: 1rem;
 }
 
-#hero > h1 {
+#hero h1 {
   font-weight: bold;
   margin: 0.5rem 0;
 }
 
-.timer-border {
+.countdown-border {
   border: solid;
   border-color: white;
   border-radius: 1rem;

@@ -58,27 +58,20 @@
 
   <!-- Hero -->
   <section id="hero">
-    <img src="assets/logo.svg" alt="Logo" class="hero-logo">
-    <h1> MasseyHacks IX </h1>
-    <p class="hero-date">May 6–7th, 2023</p>
-    <div class="timer-border">
-
-        <div class="countdown" data-date="12-4-2023" data-time="09:00">
-          <div class="day"><span class="num"></span><span class="word"></span></div>
-          <div class="hour"><span class="num"></span><span class="word"></span></div>
-          <div class="min"><span class="num"></span><span class="word"></span></div>
-          <div class="sec"><span class="num"></span><span class="word"></span></div>
+    <div id="hero-glass" class="glass-card">
+      <img src="assets/logo.svg" alt="Logo" class="hero-logo">
+      <h1> MasseyHacks IX </h1>
+      <p class="hero-date">May 6–7th, 2023</p>
+      <div class="countdown-border">
+          <div class="countdown" data-date="12-4-2023" data-time="09:00">
+            <div class="day"><span class="num"></span><span class="word"></span></div>
+            <div class="hour"><span class="num"></span><span class="word"></span></div>
+            <div class="min"><span class="num"></span><span class="word"></span></div>
+            <div class="sec"><span class="num"></span><span class="word"></span></div>
+          </div>
+      </div>
+      <a class="btn application-link">APPLY NOW</a>
     </div>
-    
-    </div>
-    <a class="btn application-link">APPLY NOW</a>
-    <!-- <br/>
-    <p class="mentor-btn"><a href="https://www.reddit.com/">
-      or apply to be a mentor here!
-    </a></p>
-    <p class="volunteer-btn"><a href="https://www.reddit.com/">
-      Interested in volunteering? 
-    </a></p> -->
   </section>
 
   <!-- About -->
@@ -326,6 +319,22 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script type="text/javascript">
+    (function($) {
+      var $window = $(window),
+          $html = $('#hero-glass');
+      function resize() {
+          if ($window.width() < 600) {
+              return $html.removeClass('glass-card');
+          }
+          $html.addClass('glass-card');
+      }
+      $window
+          .resize(resize)
+          .trigger('resize');
+    })(jQuery);
+  </script>
 
   <!-- include and initialise termynal.js -->
   <script src="js/termynal.js" data-termynal-container="#termynal"></script>
