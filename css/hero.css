@@ -1,5 +1,5 @@
 .hero-logo {
-  width: 18rem;
+  width: 16rem;
   /* height: 150px; */
 }
 
@@ -14,41 +14,74 @@
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
-  gap: 5px;
 }
 
 #hero > h1 {
   font-weight: bold;
-  font-family: "IBM Plex Sans";
+  margin: 0.5rem 0;
+}
+
+/* .volunteer-btn a {
+  font-weight: bold;
+  color: inherit;
+  text-decoration: inherit;
 }
 .volunteer-btn a {
   font-weight: bold;
-  color: inherit; /* blue colors for links too */
-  text-decoration: inherit; /* no underline */
-}
-.volunteer-btn a {
-  font-weight: bold;
-  color: white; /* blue colors for links too */
+  color: white;
   text-shadow: 2px 2px gray;
 
-  text-decoration: inherit; /* no underline */
+  text-decoration: inherit;
 }
 .mentor-btn a {
-  color: white; /* blue colors for links too */
+  color: white;
   text-shadow: 2px 2px gray;
 
-  text-decoration: inherit; /* no underline */
-}
+  text-decoration: inherit;
+} */
 .timer-border {
   border: solid;
   border-color: white;
+  border-radius: 1rem;
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 1rem;
+  padding: 0.3rem 0.3rem 0.8rem 0.3rem;
+
 }
 .hero-date {
   font-size: 2rem;
   font-weight: 700;
-  color: #c1ecff;
+  color: #434667;
+  /* text-shadow: 2px 2px gray; */
+}
+
+.countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.countdown .day,
+.countdown .hour,
+.countdown .min,
+.countdown .sec {
+  color: white;
   text-shadow: 2px 2px gray;
+  padding: 10px;
+  text-align: center;
+}
+.countdown .day .num,
+.countdown .hour .num,
+.countdown .min .num,
+.countdown .sec .num {
+  display: block;
+  font-size: 40px;
+}
+.countdown .day .word,
+.countdown .hour .word,
+.countdown .min .word,
+.countdown .sec .word {
+  display: block;
+  font-size: 20px;
 }

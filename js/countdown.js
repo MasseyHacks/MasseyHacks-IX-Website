@@ -73,9 +73,9 @@ const countdown = function (_config) {
 
     requestAnimationFrame(updateTime);
 
-    $(_config.target + " .day .num").innerHTML = addZero(days) + ":";
-    $(_config.target + " .hour .num").innerHTML = addZero(hours) + ":";
-    $(_config.target + " .min .num").innerHTML = addZero(minutes) + ":";
+    $(_config.target + " .day .num").innerHTML = addZero(days);
+    $(_config.target + " .hour .num").innerHTML = addZero(hours);
+    $(_config.target + " .min .num").innerHTML = addZero(minutes);
     $(_config.target + " .sec .num").innerHTML = addZero(seconds);
 
     // If the count down is over, write some text

@@ -114,14 +114,15 @@ body {
 
 h1 {
   font-size: 3rem;
+  color: var(--dark-color);
 }
 
 p {
   font-size: 1rem;
 }
 
-.glass_card {
-  border-radius: 1em;
+.glass-card {
+  border-radius: 1rem;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -139,17 +140,17 @@ section > div {
   width: 100%;
 }
 
-button {
-  /*background-color: var(--dark-color);*/
-  background-color: white;
-  width: 100%;
+.application-link {
+  background-color: var(--dark-color);
+  text-decoration: none;
   padding: 1em 1.5em;
-  color: var(--dark-color);
-  font-weight: 600;
-  border: none;
+  color: white;
+  border-radius: 1rem;
   font-weight: 700;
+  display: inline-block;
+  text-align: center;
 }
-h1 {
-  color: var(--dark-color);
-  text-shadow: 2px 2px gray;
+
+.btn:hover {
+  background-color: var(--bg-colour) !important;
 }
