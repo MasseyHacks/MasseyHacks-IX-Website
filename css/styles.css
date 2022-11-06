@@ -106,8 +106,6 @@ video {
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
-  /*background-color: var(--bg-colour); */
-
   background: url(../assets/bg.svg) no-repeat fixed center;
   width: 100%;
 }

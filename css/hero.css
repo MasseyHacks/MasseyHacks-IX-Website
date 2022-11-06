@@ -1,6 +1,5 @@
 .hero-logo {
   width: 16rem;
-  /* height: 150px; */
 }
 
 #hero {
@@ -20,24 +19,6 @@
   margin: 0.5rem 0;
 }
 
-/* .volunteer-btn a {
-  font-weight: bold;
-  color: inherit;
-  text-decoration: inherit;
-}
-.volunteer-btn a {
-  font-weight: bold;
-  color: white;
-  text-shadow: 2px 2px gray;
-
-  text-decoration: inherit;
-}
-.mentor-btn a {
-  color: white;
-  text-shadow: 2px 2px gray;
-
-  text-decoration: inherit;
-} */
 .timer-border {
   border: solid;
   border-color: white;
@@ -53,7 +34,6 @@
   font-size: 2rem;
   font-weight: 700;
   color: #434667;
-  /* text-shadow: 2px 2px gray; */
 }
 
 .countdown {

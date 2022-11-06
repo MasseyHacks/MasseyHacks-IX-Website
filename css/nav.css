@@ -19,7 +19,7 @@ nav {
   top: 2rem;
   z-index: 1000;
 
-  border-radius: 5%;
+  /* border-radius: 5%; */
 
   padding: 0.3rem;
   transition: background-color 500ms;
@@ -27,7 +27,7 @@ nav {
 }
 
 .nav-active {
-  border-radius: 3%;
+  /* border-radius: 3%; */
   opacity: 0.8;
 }
 
@@ -36,6 +36,10 @@ nav {
   display: block;
   cursor: pointer;
   padding: 0.5rem 0.8rem;
+
+  border-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .nav-burger > div {
@@ -50,7 +54,7 @@ nav {
         ) / 2
     )
     0;
-  border-radius: 0.3rem;
+  /* border-radius: 0.3rem; */
 }
 .nav-burger > div:nth-child(1) {
   transform-origin: left;
@@ -99,10 +103,14 @@ nav {
   transform-origin: 1rem 0;
 
   margin: auto 0;
+  padding: 0.5rem;
 
   transition-property: max-width, max-height, transform;
-  transition-duration: 400ms;
+  transition-duration: 200ms;
   transition-timing-function: ease-in-out;
+
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .nav-links-active {
