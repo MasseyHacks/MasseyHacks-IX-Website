@@ -2,6 +2,7 @@
 
 :root {
   /* Colours */
+  --dark-color: #434667;
   --bg-colour: #ffffff;
   --nav-burger-width: clamp(2rem, 2.5rem, 3rem);
   /* --nav-burger-width: clamp(4rem, 4rem, 4rem); */
@@ -106,9 +107,8 @@ video {
 body {
   font-family: "IBM Plex Sans", sans-serif;
   /*background-color: var(--bg-colour); */
-  /* background: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2545.jpg?w=2000")
-    no-repeat fixed center; */
-  background: url(/assets/bg.svg) no-repeat fixed center/100%;
+
+  background: url(../assets/bg.svg) no-repeat fixed center;
   width: 100%;
 }
 
@@ -131,7 +131,6 @@ p {
   align-items: center;
   justify-content: center;
 }
-
 section {
   margin-bottom: 10rem;
 }
@@ -140,3 +139,17 @@ section > div {
   width: 100%;
 }
 
+button {
+  /*background-color: var(--dark-color);*/
+  background-color: white;
+  width: 100%;
+  padding: 1em 1.5em;
+  color: var(--dark-color);
+  font-weight: 600;
+  border: none;
+  font-weight: 700;
+}
+h1 {
+  color: var(--dark-color);
+  text-shadow: 2px 2px gray;
+}

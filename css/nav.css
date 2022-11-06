@@ -35,7 +35,6 @@ nav {
 .nav-burger {
   display: block;
   cursor: pointer;
-
   padding: 0.5rem 0.8rem;
 }
 
@@ -52,7 +51,7 @@ nav {
     )
     0;
   border-radius: 0.3rem;
-  }
+}
 .nav-burger > div:nth-child(1) {
   transform-origin: left;
   transition-property: transform, background-color, box-shadow;
