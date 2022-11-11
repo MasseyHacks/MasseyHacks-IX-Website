@@ -1,0 +1,30 @@
+#faq .glass-card{
+    display:flex;
+    flex-wrap:nowrap !important;
+    align-items:flex-start;
+}
+#accordl,#accordr{
+    width:50%;
+}
+.accordion-item,.accordion-header,.accordion-button{
+    background-color:transparent !important;
+}
+.accordion-item{
+    border-bottom:none !important;
+}
+.accordion-button,.accordion-header{
+    box-shadow:none !important;
+}
+.accordion-button::after{
+    margin-left:0 !important;
+    margin-right:4px !important;
+    order:-1 !important;
+}
+@media screen and (max-width:800px){
+    #faq .glass-card{
+        display:block !important;
+    }
+    #accordl,#accordr{
+        width:100%;
+    }
+}

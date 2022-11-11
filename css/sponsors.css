@@ -6,7 +6,8 @@
 }
 
 #sponsors h1,
-#partners h1 {
+#partners h1,
+#faq h1 {
   font-weight: bold;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -52,7 +53,8 @@
   justify-content: space-between;
 }
 #sponsors > .glass-card,
-#partners > .glass-card {
+#partners > .glass-card,
+#faq > .glass-card {
   display: flex;
   justify-content: center;
   gap: 2em;
@@ -65,7 +67,8 @@
 
 @media screen and (min-width: 400px) {
   #sponsors > .glass-card,
-  #partners > .glass-card {
+  #partners > .glass-card,
+  #faq > .glass-card {
     width: 90%;
   }
   .partner img {
@@ -75,14 +78,16 @@
 
 @media only screen and (min-width: 768px) {
   #sponsors > .glass-card,
-  #partners > .glass-card {
+  #partners > .glass-card,
+  #faq > .glass-card {
     width: 80%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   #sponsors > .glass-card,
-  #partners > .glass-card {
+  #partners > .glass-card,
+  #faq > .glass-card {
     width: 60%;
   }
 }
