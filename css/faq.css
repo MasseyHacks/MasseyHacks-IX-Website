@@ -1,7 +1,11 @@
+#faq h1:after{
+    content:"Frequently Asked Questions";
+}
 #faq .glass-card{
     display:flex;
     flex-wrap:nowrap !important;
     align-items:flex-start;
+    gap:0 !important;
 }
 #accordl,#accordr{
     width:50%;
@@ -17,14 +21,27 @@
 }
 .accordion-button::after{
     margin-left:0 !important;
-    margin-right:4px !important;
+    margin-right:6px !important;
     order:-1 !important;
 }
+.accordion-body{
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+}
+#accordl .accordion-item:last-child .accordion-body,#accordr .accordion-item:last-child .accordion-body{
+    padding-bottom:var(--bs-accordion-body-padding-y) !important;
+}
 @media screen and (max-width:800px){
+    #faq h1:after{
+        content:"FAQ";
+    }
     #faq .glass-card{
         display:block !important;
     }
     #accordl,#accordr{
         width:100%;
+    }
+    #accordl .accordion-item:last-child .accordion-body{
+        padding-bottom:0 !important;
     }
 }
