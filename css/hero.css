@@ -28,13 +28,14 @@
 
 .countdown-border {
   border: solid;
-  border-color: white;
+  /* border-color: white; */
+  color: #434667;
   border-radius: 1rem;
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 1rem;
-  padding: 0.3rem 0.3rem 0.8rem 0.3rem;
+  padding: 0.2rem 0.2rem 0.8rem 0.2rem;
 
 }
 .hero-date {
@@ -52,8 +53,8 @@
 .countdown .hour,
 .countdown .min,
 .countdown .sec {
-  color: white;
-  text-shadow: 2px 2px gray;
+  color: #434667;
+  /* text-shadow: 2px 2px gray; */
   padding: 10px;
   text-align: center;
 }

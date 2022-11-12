@@ -18,6 +18,8 @@
 }
 .accordion-button,.accordion-header{
     box-shadow:none !important;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 .accordion-button::after{
     margin-left:0 !important;
@@ -27,6 +29,7 @@
 .accordion-body{
     padding-top:0 !important;
     padding-bottom:0 !important;
+    font-size: 1rem;
 }
 #accordl .accordion-item:last-child .accordion-body,#accordr .accordion-item:last-child .accordion-body{
     padding-bottom:var(--bs-accordion-body-padding-y) !important;
