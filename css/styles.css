@@ -179,7 +179,8 @@ a:not(.sponsor-obj):hover {
   opacity: 0.8;
 }
 .zoom:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
+  transition: 0.2s;
 }
 a:not(.sponsor-obj, .jumpstart-apply, .btn) {
   text-decoration: none;
