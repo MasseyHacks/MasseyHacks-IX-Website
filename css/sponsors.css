@@ -42,10 +42,18 @@
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-
+.gold {
+  border: solid gold 2px !important;
+}
+.silver {
+  border: solid silver 2px !important;
+}
+.bronze {
+  border: solid #cd7f32 2px !important;
+}
 .partner img {
   max-height: 15rem;
-  max-width: min(15rem, 100%);
+  width: 10em;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }

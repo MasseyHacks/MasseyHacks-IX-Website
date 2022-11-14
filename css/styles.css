@@ -157,3 +157,33 @@ section > div {
 .btn:hover {
   background-color: var(--bg-colour) !important;
 }
+a:not(.sponsor-obj, .jumpstart-apply, .btn)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0.125rem;
+  background-color: #158c9b;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+a:not(.sponsor-obj, .jumpstart-apply, .btn):hover::after,
+#faq .cursor-pointer:not(.collapsed) a::after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+a:not(.sponsor-obj):hover {
+  opacity: 0.8;
+}
+.zoom:hover {
+  transform: scale(1.05);
+}
+a:not(.sponsor-obj, .jumpstart-apply, .btn) {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  color: #158c9b;
+}

@@ -14,10 +14,6 @@ footer a::after {
 }
 
 footer {
-  text-align: center !important;
-}
-
-footer {
   background: #111;
   color: white;
 }
@@ -53,4 +49,28 @@ footer {
 
 .footer-social a {
   color: white;
+}
+.copyright-text {
+  margin: 10px 0px;
+  opacity: 0.7;
+}
+.footer-btn {
+  background-color: var(--dark-color);
+  color: white;
+  border: none;
+  padding: 7px 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .footer-nav {
+    display: none;
+  }
+
+  footer {
+    text-align: center !important;
+  }
+
+  #mc_embed_signup {
+    display: none !important;
+  }
 }
