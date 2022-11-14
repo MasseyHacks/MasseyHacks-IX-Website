@@ -26,6 +26,13 @@ nav {
   opacity: 0.8;
 }
 
+@media screen and (max-width: 470px) {
+  nav {
+    left: 1rem;
+    top: 1rem;
+  }
+}
+
 .nav-active {
   /* border-radius: 3%; */
   opacity: 0.8;

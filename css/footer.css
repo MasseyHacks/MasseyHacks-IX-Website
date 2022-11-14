@@ -25,6 +25,7 @@ footer {
 .footer-title {
   font-size: clamp(2rem, 2.5rem, 3rem);
   color: white;
+  margin-top: 0 !important;
 }
 
 .footer-address {
@@ -59,6 +60,14 @@ footer {
   color: white;
   border: none;
   padding: 7px 30px;
+}
+
+.mlh-code-of-conduct {
+  margin-top: 0.8rem;
+}
+
+label > h3 {
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 991px) {
