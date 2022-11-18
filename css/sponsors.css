@@ -1,3 +1,7 @@
+#sponsors,#partners{
+  padding-bottom:30px;
+}
+
 #sponsors #partners {
   flex-direction: column;
   justify-content: center;
@@ -22,6 +26,7 @@
   justify-content: center;
   text-align: center;
   align-items: center;
+  line-height: 1.5rem;
 }
 
 .bronze img {
@@ -43,19 +48,19 @@
   padding-bottom: 1.25rem;
 }
 .gold {
-  border: solid gold 2px !important;
+  /* border: solid gold 2px !important; */
   border: none;
-  box-shadow: 0 0 5px 1px gold, inset 0 0 5px 1px gold;
+  /* box-shadow: 0 0 5px 1px gold, inset 0 0 5px 1px gold; */
 }
 .silver {
-  border: solid silver 2px !important;
+  /* border: solid silver 2px !important; */
   border: none;
-  box-shadow: 0 0 5px 1px silver, inset 0 0 5px 1px silver;
+  /* box-shadow: 0 0 5px 1px silver, inset 0 0 5px 1px silver; */
 }
 .bronze {
-  border: solid #cd7f32 2px !important;
+  /* border: solid #cd7f32 2px !important; */
   border: none;
-  box-shadow: 0 0 5px 1px #cd7f32, inset 0 0 5px 1px #cd7f32;
+  /* box-shadow: 0 0 5px 1px #cd7f32, inset 0 0 5px 1px #cd7f32; */
 }
 .partner img {
   max-height: 15rem;
