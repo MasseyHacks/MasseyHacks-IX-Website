@@ -38,6 +38,7 @@
 }
 
 .termynal {
+  margin-top: 10vh;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -45,17 +46,18 @@
   height: 80vh;
   width: 100vh;
   position: relative;
-  flex-grow: 3;
+  flex-grow: 5;
 }
 
 .icons{
+  margin-top: 10vh;
   justify-content: space-between;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   position: relative;
-  flex-shrink: 3;
+  flex-shrink: 5;
 }
 
 .trophy{
