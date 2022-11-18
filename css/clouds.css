@@ -10,7 +10,7 @@
 #clouds-1{
     background-image:url("../assets/small_cloud_1.svg");
     top:5vh;
-    animation:clouds 18s linear infinite;
+    animation:clouds 19s linear infinite;
 }
 #clouds-2{
     background-image:url("../assets/med_cloud_1.svg");
@@ -26,7 +26,7 @@
 #clouds-4{
     background-image:url("../assets/big_cloud_2.svg");
     top:65vh;
-    animation:clouds 18s linear infinite;
+    animation:clouds 17s linear infinite;
     animation-direction:reverse;
 }
 #clouds-5{
