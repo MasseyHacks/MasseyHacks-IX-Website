@@ -67,7 +67,17 @@ class Termynal {
 
         this.container.setAttribute('data-termynal', '');
         this.container.innerHTML = '';
-        this.start();
+        
+        this.startDelay;
+    }
+
+    async startDelay(){
+        if(!(window.scrollY > document.querySelector('#about'))){
+            this.start();
+        }
+        else{
+            setTimeout(this.startDelay, 300);
+        }
     }
 
     /**
@@ -76,6 +86,7 @@ class Termynal {
     async start() {
         await this._wait(this.startDelay);
 
+        
         for (let line of this.lines) {
             const type = line.getAttribute(this.pfx);
             const delay = line.getAttribute(`${this.pfx}-delay`) || this.lineDelay;

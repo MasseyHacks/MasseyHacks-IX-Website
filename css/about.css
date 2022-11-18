@@ -2,12 +2,62 @@
     --color-bg: #ddd;
     --color-text: #1a1e24;
     --color-text-subtle: #8F98FF;
-
-    padding: 0; margin: 0;
-    width: 100%;
-    min-height: 100vh;
+    gap: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
     display: -webkit-box; display: -ms-flexbox; display: flex;
     -webkit-box-align: center; -ms-flex-align: center; align-items: center;
     -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;
     -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+
+.shadow {
+  box-shadow: 0 0 5px 1px black, inset 0 0 5px 1px black;
+  overflow: visible;
+}
+
+@media only screen and (min-width: 0px) {
+  .wrapper {
+    width: 80%;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+} 
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 60%;
+    justify-content: space-between;
+    flex-direction: row;  
+  }
+}
+
+.content {
+  text-align: center;
+}
+
+.termynal {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80vh;
+  width: 100vh;
+  position: relative;
+  flex-grow: 3;
+}
+
+.icons{
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  flex-shrink: 3;
+}
+
+.trophy{
+  margin-top: 10vh;
 }

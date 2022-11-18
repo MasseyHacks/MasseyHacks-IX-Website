@@ -102,36 +102,72 @@
     </section>
 
     <!-- About -->
-    <section id="about">
-      <!-- the termynal container -->
-      <div
-        id="termynal"
-        data-termynal
-        data-ty-typeDelay="40"
-        data-ty-lineDelay="700"
-      >
-        <span data-ty="input" data-ty-prompt=">>>">What is MasseyHacks?</span>
-        <span data-ty
-          >MasseyHacks is a high school hackathon — an event perfect for
-          students fascinated by the world of computer science and engineering,
-          where participants get to learn more about computer science and have a
-          chance at creating a project of their own! Never touched a line of
-          code in your life? Already created a robot to do your homework? No
-          matter your skill level, we invite you to join us as a hacker for 24
-          hours to explore workshops, enjoy countless hackathon activities, and
-          meet 160+ like-minded students! Create memories and guide the story of
-          your STEM journey at MasseyHacks IX!</span
-        >
-        <!-- <span data-ty="input" data-ty-typeDelay="1000" data-ty-prompt="(y/n)">y</span>
-      <span data-ty="input" data-ty-prompt="▲" data-ty-typeDelay="40">200+ Students of all Backgrounds</span>
-      <span data-ty="input" data-ty-prompt="▲">Compete in Teams of up to Four!</span>
-      <span data-ty="input" data-ty-prompt=">">Array(4).fill('🥼')</span>
-      <span data-ty>['🥼', '🥼', '🥼', '🥼']</span>
-      <span data-ty="input" data-ty-prompt="▲">cd ~/prizes</span>
-      <span data-ty="input" data-ty-prompt="▲ ~/repos"> git checkout branch master</span>
-      <span data-ty="input" data-ty-prompt="▲ ~/repos (master)">git commit -m "Epic Prizes!"</span>
-      <span data-ty="progress" data-ty-progressChar="$"></span>
-      <span data-ty>  - - - - - - - - $21,000+ in Prizes - - - - -  - - - </span> -->
+    <section id="about" class="wrapper" style="grid-auto-flow: row;">
+
+    <!-- the termynal container -->
+    <div
+    class="shadow termynal"
+    id="termynal"
+    data-termynal
+    data-ty-typeDelay="40"
+    data-ty-lineDelay="700"
+  >
+    <span data-ty="input" data-ty-prompt=">>>">What is MasseyHacks?</span>
+    <span data-ty="input" data-ty-typeDelay="1"
+      >MasseyHacks is a high school hackathon — an event perfect for
+      students fascinated by the world of computer science and engineering,
+      where participants get to learn more about computer science and have a
+      chance at creating a project of their own! Never touched a line of
+      code in your life? Already created a robot to do your homework? No
+      matter your skill level, we invite you to join us as a hacker for 24
+      hours to explore workshops, enjoy countless hackathon activities, and
+      meet 160+ like-minded students! Create memories and guide the story of
+      your STEM journey at MasseyHacks IX!</span
+    >
+    <!-- <span data-ty="input" data-ty-typeDelay="1000" data-ty-prompt="(y/n)">y</span>
+    <span data-ty="input" data-ty-prompt="▲" data-ty-typeDelay="40">200+ Students of all Backgrounds</span>
+    <span data-ty="input" data-ty-prompt="▲">Compete in Teams of up to Four!</span>
+    <span data-ty="input" data-ty-prompt=">">Array(4).fill('🥼')</span>
+    <span data-ty>['🥼', '🥼', '🥼', '🥼']</span>
+    <span data-ty="input" data-ty-prompt="▲">cd ~/prizes</span>
+    <span data-ty="input" data-ty-prompt="▲ ~/repos"> git checkout branch master</span>
+    <span data-ty="input" data-ty-prompt="▲ ~/repos (master)">git commit -m "Epic Prizes!"</span>
+    <span data-ty="progress" data-ty-progressChar="$"></span>
+    <span data-ty>  - - - - - - - - $21,000+ in Prizes - - - - -  - - - </span> -->
+    </div>
+
+    <!-- Students Attended -->
+    <div class="icons">
+        <div class="cap">
+          <div class="content">
+              <div>
+                  <i class="fas fa-graduation-cap fa-10x"></i>
+              </div>
+              <div>
+                  <h2><span class="js-counter" data-counted="false" data-target-value="1200" data-time="800">0</span>+
+                  </h2>
+              </div>
+              <div>
+                  <p>students have attended</p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Prizes awarded -->
+        <div class="trophy">
+          <div class="content">
+            <div>
+                <i class="fas fa-trophy fa-10x"></i>
+            </div>
+            <div>
+                <h2>$<span class="js-counter" data-counted="false" data-target-value="21000"
+                                        data-time="800">0</span>+</h2>
+            </div>
+            <div>
+                <p>in prizes awarded</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
