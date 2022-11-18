@@ -6,11 +6,11 @@
 
 ::-webkit-scrollbar-track {
   border-radius: 1rem;
-  background-color: lightgray;
+  background-color: #e4c5ff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #777;
+  background: #434667;
   border-radius: 0.2rem;
   width: 80%;
 }
