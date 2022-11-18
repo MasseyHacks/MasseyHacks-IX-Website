@@ -1,3 +1,7 @@
+#sponsors,#partners{
+  padding-bottom:30px;
+}
+
 #sponsors #partners {
   flex-direction: column;
   justify-content: center;
