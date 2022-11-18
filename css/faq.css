@@ -1,3 +1,6 @@
+#faq{
+    padding-bottom:30px;
+}
 #faq h1:after{
     content:"Frequently Asked Questions";
 }
