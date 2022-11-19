@@ -189,3 +189,10 @@ a:not(.sponsor-obj, .jumpstart-apply, .btn) {
   display: inline-block;
   color: #158c9b;
 }
+
+.anchack{
+  width:0 !important;
+  height:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+}
