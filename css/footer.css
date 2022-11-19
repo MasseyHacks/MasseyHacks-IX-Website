@@ -14,7 +14,7 @@ footer a::after {
 }
 
 footer {
-  background: #181b33;
+  background: #121427;
   color: white;
 }
 
@@ -56,20 +56,18 @@ footer {
   opacity: 0.7;
 }
 .footer-btn {
-  background-color: var(--dark-color);
-  color: white;
+  background-color: #c1ecff;
+  color: var(--dark-color);
   border: none;
-  padding: 7px 30px;
+  padding: 8px 10px;
+  flex-grow: 1;
+  border-radius: 5%;
 }
-
-.mlh-code-of-conduct {
-  margin-top: 0.8rem;
+#mce-EMAIL {
+  padding: 8px 0px;
+  flex-grow: 1;
+  width: 50%;
 }
-
-label > h3 {
-  font-size: 1.2rem;
-}
-
 @media screen and (max-width: 991px) {
   .footer-nav {
     display: none;
@@ -78,7 +76,6 @@ label > h3 {
   footer {
     text-align: center !important;
   }
-
   #mc_embed_signup {
     display: none !important;
   }

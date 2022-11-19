@@ -1,5 +1,6 @@
-#sponsors,#partners{
-  padding-bottom:30px;
+#sponsors,
+#partners {
+  padding-bottom: 30px;
 }
 
 #sponsors #partners {
@@ -85,7 +86,7 @@
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 375px) {
   #about,
   #sponsors > .glass-card,
   #partners > .glass-card,
