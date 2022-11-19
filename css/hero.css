@@ -36,7 +36,6 @@
   justify-content: center;
   margin: 1rem;
   padding: 0.2rem 0.2rem 0.8rem 0.2rem;
-
 }
 .hero-date {
   font-size: 2rem;
@@ -71,4 +70,57 @@
 .countdown .sec .word {
   display: block;
   font-size: 20px;
+}
+@media screen and (min-width: 375px) {
+  .btn {
+    width: 50%;
+  }
+  .hero-logo {
+    width: 13rem;
+  }
+  #hero h1 {
+    font-size: 2rem;
+  }
+  .hero-date {
+    font-size: 1.5rem;
+  }
+  .countdown .day .num,
+  .countdown .hour .num,
+  .countdown .min .num,
+  .countdown .sec .num {
+    display: block;
+    font-size: 30px;
+  }
+  .countdown .day .word,
+  .countdown .hour .word,
+  .countdown .min .word,
+  .countdown .sec .word {
+    display: block;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero-logo {
+    width: 15rem;
+  }
+  #hero h1 {
+    font-size: 3rem;
+  }
+  .hero-date {
+    font-size: 1.5rem;
+  }
+  .countdown .day .num,
+  .countdown .hour .num,
+  .countdown .min .num,
+  .countdown .sec .num {
+    display: block;
+    font-size: 35px;
+  }
+  .countdown .day .word,
+  .countdown .hour .word,
+  .countdown .min .word,
+  .countdown .sec .word {
+    display: block;
+    font-size: 20px;
+  }
 }
