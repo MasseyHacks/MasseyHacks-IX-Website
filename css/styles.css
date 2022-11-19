@@ -110,7 +110,7 @@ html {
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
-  background: url("../assets/bg.svg") no-repeat fixed center;
+  background: url("../assets/bg.svg") no-repeat fixed center center;
   width: 100%;
   overflow-x: hidden !important;
 }
@@ -190,9 +190,9 @@ a:not(.sponsor-obj, .jumpstart-apply, .btn) {
   color: #158c9b;
 }
 
-.anchack{
-  width:0 !important;
-  height:0 !important;
-  margin:0 !important;
-  padding:0 !important;
+.anchack {
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
