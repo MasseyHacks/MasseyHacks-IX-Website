@@ -68,21 +68,9 @@ class Termynal {
         this.container.setAttribute('data-termynal', '');
         this.container.innerHTML = '';
         
-        this.start();
     }
 
-    // async startDelay(){
-    //     if(!(window.scrollY > document.querySelector('#about'))){
-    //         this.start();
-    //     }
-    //     else{
-    //         setTimeout(this.startDelay, 300);
-    //     }
-    // }
-
-    /**
-     * Start the animation and rener the lines depending on their data attributes.
-     */
+    
     async start() {
         await this._wait(this.startDelay);
 

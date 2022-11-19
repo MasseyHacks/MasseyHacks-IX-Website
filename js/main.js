@@ -16,3 +16,16 @@ const toggleNavLinks = () => {
   }
 };
 
+const isScrolledIntoView = (elem) => {
+  const docViewTop = $(window).scrollTop();
+  const docViewBottom = docViewTop + $(window).height();
+  const elemTop = $(elem).offset().top;
+  console.log(docViewBottom+" "+elemTop);
+  return docViewBottom > elemTop;
+};
+
+$(window).scroll(() => {
+  if (isScrolledIntoView($("#about"))) {
+      Termynal.start();
+  }
+});
