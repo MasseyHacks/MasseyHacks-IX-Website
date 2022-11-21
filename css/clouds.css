@@ -1,44 +1,48 @@
-#clouds-1,#clouds-2,#clouds-3,#clouds-4,#clouds-5{
-    z-index:-2147483647;
-    width:300px;
-    height:200px;
-    background-size:contain;
-    position:fixed;
-    left:-200px;
-    background-repeat:no-repeat;
+#clouds-1,
+#clouds-2,
+#clouds-3,
+#clouds-4,
+#clouds-5 {
+  z-index: -2147483647;
+  width: 300px;
+  height: 200px;
+  background-size: contain;
+  position: fixed;
+  left: -200px;
+  background-repeat: no-repeat;
 }
-#clouds-1{
-    background-image:url("../assets/small_cloud_1.svg");
-    top:5vh;
-    animation:clouds 19s linear infinite;
+#clouds-1 {
+  background-image: url("../assets/small_cloud_1.svg");
+  top: 5vh;
+  animation: clouds 19s linear infinite;
 }
-#clouds-2{
-    background-image:url("../assets/med_cloud_1.svg");
-    top:25vh;
-    animation:clouds 12s linear infinite;
-    animation-direction:reverse;
+#clouds-2 {
+  background-image: url("../assets/med_cloud_1.svg");
+  top: 25vh;
+  animation: clouds 12s linear infinite;
+  animation-direction: reverse;
 }
-#clouds-3{
-    background-image:url("../assets/big_cloud_1.svg");
-    top:45vh;
-    animation:clouds 21s linear infinite;
+#clouds-3 {
+  background-image: url("../assets/big_cloud_1.svg");
+  top: 45vh;
+  animation: clouds 21s linear infinite;
 }
-#clouds-4{
-    background-image:url("../assets/big_cloud_2.svg");
-    top:65vh;
-    animation:clouds 17s linear infinite;
-    animation-direction:reverse;
+#clouds-4 {
+  background-image: url("../assets/big_cloud_2.svg");
+  top: 65vh;
+  animation: clouds 17s linear infinite;
+  animation-direction: reverse;
 }
-#clouds-5{
-    background-image:url("../assets/small_cloud_1.svg");
-    top:85vh;
-    animation:clouds 14s linear infinite;
+#clouds-5 {
+  background-image: url("../assets/small_cloud_1.svg");
+  top: 85vh;
+  animation: clouds 14s linear infinite;
 }
-@keyframes clouds{
-    from{
-        transform:translate3d(-200px,0,0);
-    }
-    to{
-        transform:translate3d(calc(100vw + 200px),0,0);
-    }
+@keyframes clouds {
+  from {
+    transform: translate3d(-200px, 0, 0);
+  }
+  to {
+    transform: translate3d(calc(100vw + 200px), 0, 0);
+  }
 }

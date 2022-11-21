@@ -26,6 +26,21 @@
   margin: 0.5rem 0;
 }
 
+.application-link {
+  background-color: var(--dark-color);
+  text-decoration: none;
+  padding: 1em 1.5em;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--bg-colour) !important;
+}
+
 .countdown-border {
   border: solid;
   /* border-color: white; */
@@ -73,7 +88,7 @@
 }
 @media screen and (min-width: 375px) {
   .btn {
-    width: 50%;
+    max-width: 50%;
   }
   .hero-logo {
     width: 13rem;
