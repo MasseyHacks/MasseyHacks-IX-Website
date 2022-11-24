@@ -75,6 +75,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 5vh;
+  color: var(--color-bg);
   /* position: relative; */
   /* flex-shrink: 5; */
 }
