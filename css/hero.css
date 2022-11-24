@@ -26,6 +26,10 @@
   margin: 0.5rem 0;
 }
 
+#home h2 {
+  font-size: 1.5rem;
+}
+
 .application-link {
   background-color: var(--dark-color);
   text-decoration: none;
