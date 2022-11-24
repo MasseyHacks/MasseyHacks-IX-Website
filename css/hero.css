@@ -2,13 +2,13 @@
   width: 16rem;
 }
 
-#hero {
+#home {
   height: 100vh;
   display: grid;
   place-content: center;
 }
 
-#hero > div {
+#home > div {
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
   margin: 1rem;
 }
 
-#hero h1 {
+#home h1 {
   font-weight: bold;
   margin: 0.5rem 0;
 }
@@ -87,38 +87,38 @@
   font-size: 20px;
 }
 /* @media screen and (min-width: 375px) { */
-  .btn {
-    max-width: 50%;
-  }
-  .hero-logo {
-    width: 13rem;
-  }
-  #hero h1 {
-    font-size: 2rem;
-  }
-  .hero-date {
-    font-size: 1.5rem;
-  }
-  .countdown .day .num,
-  .countdown .hour .num,
-  .countdown .min .num,
-  .countdown .sec .num {
-    display: block;
-    font-size: 30px;
-  }
-  .countdown .day .word,
-  .countdown .hour .word,
-  .countdown .min .word,
-  .countdown .sec .word {
-    display: block;
-    font-size: 15px;
-  }
+.btn {
+  max-width: 50%;
+}
+.hero-logo {
+  width: 13rem;
+}
+#home h1 {
+  font-size: 2rem;
+}
+.hero-date {
+  font-size: 1.5rem;
+}
+.countdown .day .num,
+.countdown .hour .num,
+.countdown .min .num,
+.countdown .sec .num {
+  display: block;
+  font-size: 30px;
+}
+.countdown .day .word,
+.countdown .hour .word,
+.countdown .min .word,
+.countdown .sec .word {
+  display: block;
+  font-size: 15px;
+}
 /* } */
 @media only screen and (min-width: 768px) {
   .hero-logo {
     width: 15rem;
   }
-  #hero h1 {
+  #home h1 {
     font-size: 3rem;
   }
   .hero-date {
