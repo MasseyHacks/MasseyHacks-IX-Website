@@ -86,7 +86,7 @@
   display: block;
   font-size: 20px;
 }
-@media screen and (min-width: 375px) {
+/* @media screen and (min-width: 375px) { */
   .btn {
     max-width: 50%;
   }
@@ -113,7 +113,7 @@
     display: block;
     font-size: 15px;
   }
-}
+/* } */
 @media only screen and (min-width: 768px) {
   .hero-logo {
     width: 15rem;

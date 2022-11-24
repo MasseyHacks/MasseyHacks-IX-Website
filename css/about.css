@@ -52,6 +52,22 @@
   /* flex-grow: 5; */
 }
 
+@media screen and (max-width: 500px) {
+  .termynal {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+  #about {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1343px) and (min-width: 550px) {
+  .icons {
+    display: none;
+  }
+}
+
 .icons {
   justify-content: space-between;
   /* flex-direction: row; */
