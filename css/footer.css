@@ -35,6 +35,8 @@ footer {
 .footer-nav {
   display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-email-social {
