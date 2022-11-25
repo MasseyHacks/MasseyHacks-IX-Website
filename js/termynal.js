@@ -69,23 +69,19 @@ class Termynal {
 
         this.container.setAttribute('data-termynal', '');
         this.container.innerHTML = '';
-        
-        this.start();
+
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+              observer.disconnect(); // Cleanup
+              this.start(); // Start the animation
+            }
+          });
+          observer.observe(document.querySelector("#about"));
     }
 
-    // async startDelay(){
-    //     if(!(window.scrollY > document.querySelector('#about'))){
-    //         this.start();
-    //     }
-    //     else{
-    //         setTimeout(this.startDelay, 300);
-    //     }
-    // }
 
-    /**
-     * Start the animation and rener the lines depending on their data attributes.
-     */
     async start() {
+        jsCounter(document.querySelector("#about"))
         await this._wait(this.startDelay);
 
         
