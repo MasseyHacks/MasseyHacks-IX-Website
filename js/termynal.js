@@ -6,6 +6,8 @@
  * @author Ines Montani <ines@ines.io>
  * @version 0.0.1
  * @license MIT
+ * 
+ * Modified by MasseyHacks Team
  */
 
 'use strict';
