@@ -44,6 +44,11 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    
+    <!-- Splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
     <!-- AOS -->
     <link
@@ -62,6 +67,7 @@
     <link rel="stylesheet" href="css/sponsors.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/footer.css" />
 
     <!-- JS Files -->
@@ -203,6 +209,19 @@
         </div>
       </div>
     </section>
+
+    <!-- Image carousel -->
+    <div id="carousel">
+      <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><img height="128" src="./assets/blob1.svg"></li>
+            <li class="splide__slide"><img height="128" src="./assets/blob1.svg"></li>
+            <li class="splide__slide"><img height="128" src="./assets/blob1.svg"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
 
     <!-- FAQ -->
     <div id="faq" class="anchack"></div>
@@ -923,6 +942,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <!-- Splide -->
+    <script>
+      document.addEventListener("DOMContentLoaded",function(){
+        var splide = new Splide(".splide");
+        splide.mount();
+      });
     </script>
   </body>
 </html>
