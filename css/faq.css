@@ -10,6 +10,9 @@
   align-items: flex-start;
   gap: 0 !important;
 }
+#faq .faq-prompt {
+  text-align: center;
+}
 #accordl,
 #accordr {
   width: 50%;
