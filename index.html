@@ -128,8 +128,26 @@
             </div>
           </div>
         </div>
-        <!-- <a class="btn application-link">APPLY NOW</a> -->
-        <h2>Applications Open Soon!</h2>
+
+        <div id="application-div" class="btn">
+          <div id="application-overlay">
+            <p>Apply</p>
+          </div>
+          <div id="application-links">
+            <a>Student</a>
+            <a>Mentor</a>
+            <a>Teacher</a>
+          </div>
+        </div>
+        <script>
+          document.getElementById("application-div").onclick = ()=>{
+            document.getElementById("application-div").style.animation = "appexpand .2s linear forwards";
+            document.getElementById("application-div").className = "";
+            document.getElementById("application-overlay").style.display = "none";
+            document.getElementById("application-links").style.display = "flex";
+          };
+        </script>
+        <!--<h2>Applications Open Soon!</h2>-->
       </div>
     </section>
 

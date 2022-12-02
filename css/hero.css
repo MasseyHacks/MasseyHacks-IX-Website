@@ -30,19 +30,42 @@
   font-size: 1.5rem;
 }
 
-.application-link {
+#application-div{
   background-color: var(--dark-color);
   text-decoration: none;
-  padding: 1em 1.5em;
+  padding: 0.6em 1.5em;
   color: white;
   border-radius: 1rem;
   font-weight: 700;
   display: inline-block;
   text-align: center;
 }
+@keyframes appexpand{
+  from{
+    max-width:50%;
+  }to{
+    width:100%;
+    max-width:100%;
+  }
+}
+#application-overlay{
+  height:100%;
+}
+#application-links{
+  display:none;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:100%;
+}
+#application-links a{
+  width:33.33%;
+  cursor:pointer;
+}
 
 .btn:hover {
   background-color: var(--bg-colour) !important;
+  color: var(--dark-color) !important;
 }
 
 .countdown-border {
