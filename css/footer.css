@@ -71,7 +71,12 @@ footer {
 #mce-EMAIL {
   padding: 8px 0px;
   flex-grow: 1;
-  width: 50%;
+  width: 100%;
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #mce-EMAIL {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 991px) {
   .footer-nav {
@@ -81,9 +86,7 @@ footer {
   footer {
     text-align: center !important;
   }
-  #mc_embed_signup {
-    display: none !important;
-  }
+
   .footer-social > * {
     padding-left: 0 !important;
     padding-right: 0 !important;
