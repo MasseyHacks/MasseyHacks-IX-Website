@@ -94,7 +94,7 @@
 }
 @media screen and (max-width: 768px) {
   #application-links a,
-  #application-overlay {
+  #application-overlay > p {
     font-size: 0.8rem;
   }
 }
