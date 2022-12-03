@@ -136,21 +136,26 @@
             <p>Apply</p>
           </div>
           <div id="application-links">
-            <a href="https://google.com">Student</a>
             <a href="https://google.com">Mentor</a>
-            <a href="https://google.com">Teacher</a>
+            <a href="https://google.com">Hacker</a>
+            <a href="https://google.com">Volunteer</a>
           </div>
         </div>
         <script>
-          document.getElementById("application-div").onclick = ()=>{
-            document.getElementById("application-div").style.animation = "appexpand .2s linear forwards";
-            document.querySelector("#application-overlay p").style.animation = "appfadeout .2s linear forwards";
-            setTimeout(()=>{
-              document.getElementById("application-overlay").style.display = "none";
-              document.getElementById("application-links").style.display = "flex";
-              document.getElementById("application-links").style.animation = "appfadein .2s linear forwards";
+          document.getElementById("application-div").onclick = () => {
+            document.getElementById("application-div").style.animation =
+              "appexpand .2s linear forwards";
+            document.querySelector("#application-overlay p").style.animation =
+              "appfadeout .2s linear forwards";
+            setTimeout(() => {
+              document.getElementById("application-overlay").style.display =
+                "none";
+              document.getElementById("application-links").style.display =
+                "flex";
+              document.getElementById("application-links").style.animation =
+                "appfadein .2s linear forwards";
               document.getElementById("application-div").style.cursor = "unset";
-            },200);
+            }, 200);
           };
         </script> -->
         <h2>Applications Open Soon!</h2>

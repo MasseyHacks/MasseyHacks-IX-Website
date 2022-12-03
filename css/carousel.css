@@ -40,6 +40,9 @@
   );
 }
 @media screen and (max-width: 500px) {
+  #carousel {
+    margin-bottom: 0;
+  }
   .splide__slide img {
     height: 200px;
   }
