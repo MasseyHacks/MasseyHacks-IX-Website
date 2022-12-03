@@ -146,7 +146,7 @@ section > div {
   width: 100%;
 }
 
-a:not(.sponsor-obj, .jumpstart-apply, .btn)::after {
+a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a)::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -157,21 +157,21 @@ a:not(.sponsor-obj, .jumpstart-apply, .btn)::after {
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-a:not(.sponsor-obj, .jumpstart-apply, .btn):hover::after,
+a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a):hover::after,
 #faq .cursor-pointer:not(.collapsed) a::after {
   left: 0;
   right: auto;
   width: 100%;
 }
 
-a:not(.sponsor-obj):hover {
+a:not(.sponsor-obj, #application-links a):hover {
   opacity: 0.8;
 }
 .zoom:hover {
   transform: scale(1.02);
   transition: 0.2s;
 }
-a:not(.sponsor-obj, .jumpstart-apply, .btn) {
+a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a) {
   text-decoration: none;
   position: relative;
   display: inline-block;
