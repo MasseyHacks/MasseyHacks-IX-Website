@@ -171,7 +171,7 @@ a:not(.sponsor-obj, #application-links a):hover {
   transform: scale(1.02);
   transition: 0.2s;
 }
-a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a) {
+a:not(.sponsor-obj, .jumpstart-apply, .btn) {
   text-decoration: none;
   position: relative;
   display: inline-block;
