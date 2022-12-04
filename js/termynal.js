@@ -81,7 +81,6 @@ class Termynal {
 
 
     async start() {
-        jsCounter(document.querySelector("#about"))
         await this._wait(this.startDelay);
 
         
