@@ -61,3 +61,19 @@ const addCommaToNum = (value) => {
 
   return finalString.substring(0, finalString.length - 1);
 };
+
+const observer_trophy = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    observer_trophy.disconnect(); // Cleanup
+    jsCounter(document.querySelector("#trophy"))// Start the animation
+  }
+});
+observer_trophy.observe(document.querySelector("#trophy"));
+
+const observer_cap = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    observer_cap.disconnect(); // Cleanup
+    jsCounter(document.querySelector("#cap"))// Start the animation
+  }
+});
+observer_cap.observe(document.querySelector("#cap"));
