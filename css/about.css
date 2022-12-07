@@ -64,7 +64,7 @@
 
 @media screen and (max-width: 1343px) and (min-width: 550px) {
   .icons {
-    display: none;
+    display: flex;
   }
 }
 
@@ -72,9 +72,10 @@
   justify-content: space-between;
   /* flex-direction: row; */
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  /*align-items: center;*/
   gap: 5vh;
+
+  /* flex-wrap: wrap;
   color: var(--color-bg);
   /* position: relative; */
   /* flex-shrink: 5; */
