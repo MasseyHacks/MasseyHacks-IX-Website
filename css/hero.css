@@ -54,6 +54,16 @@
     max-width: 100%;
   }
 }
+@keyframes appshrink{
+  from{
+    width: 100%;
+    max-width: 100%;
+  }
+  to{
+    width: 131.41px;
+    max-width: 50%;
+  }
+}
 @keyframes appfadeout {
   from {
     opacity: 1;
