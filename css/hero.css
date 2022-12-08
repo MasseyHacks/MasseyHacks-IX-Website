@@ -30,19 +30,94 @@
   font-size: 1.5rem;
 }
 
-.application-link {
+#application-div {
   background-color: var(--dark-color);
   text-decoration: none;
-  padding: 1em 1.5em;
+  padding: 0.6em 1.5em;
   color: white;
   border-radius: 1rem;
   font-weight: 700;
   display: inline-block;
   text-align: center;
 }
+#application-div:hover {
+  background-color: var(--dark-color) !important;
+  color: white !important;
+}
+@keyframes appexpand {
+  from {
+    width: 131.41px;
+    max-width: 50%;
+  }
+  to {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@keyframes appfadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+#application-overlay {
+  height: 100%;
+}
+#application-links {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+@keyframes appfadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#application-links a {
+  cursor: pointer;
+  text-decoration: none;
+  color: unset;
+  width: 33.3333%;
+  height: 100%;
+  background-color: var(--dark-color);
+  color: #fff;
+  padding: 0.6em 1.5em;
+  transition: color 0.3s, background-color 0.3s;
+}
+@media screen and (max-width: 768px) {
+  #application-links a,
+  #application-overlay > p {
+    font-size: 0.8rem;
+  }
+}
+#application-links a:hover {
+  background-color: #fff !important;
+  color: var(--dark-color) !important;
+}
+#application-links a:first-child {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+#application-links a:last-child {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+#application-links a:nth-child(2) {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
 
 .btn:hover {
   background-color: var(--bg-colour) !important;
+  color: var(--dark-color) !important;
 }
 
 .countdown-border {

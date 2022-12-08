@@ -75,7 +75,8 @@
 #about,
 #sponsors > .glass-card,
 #partners > .glass-card,
-#faq > .glass-card {
+#faq > .glass-card,
+#carousel {
   display: flex;
   justify-content: center;
   gap: 2em;
@@ -90,7 +91,8 @@
   #about,
   #sponsors > .glass-card,
   #partners > .glass-card,
-  #faq > .glass-card {
+  #faq > .glass-card,
+  #carousel {
     width: 90%;
   }
   .partner img {
@@ -102,7 +104,8 @@
   #about,
   #sponsors > .glass-card,
   #partners > .glass-card,
-  #faq > .glass-card {
+  #faq > .glass-card,
+  #carousel {
     width: 80%;
   }
 }
@@ -110,7 +113,8 @@
 @media only screen and (min-width: 1200px) {
   #sponsors > .glass-card,
   #partners > .glass-card,
-  #faq > .glass-card {
+  #faq > .glass-card,
+  #carousel {
     width: 60%;
   }
 }

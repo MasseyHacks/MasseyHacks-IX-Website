@@ -73,6 +73,13 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
     /></noscript>
 
+    <!-- Splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+
     <!-- AOS -->
     <link
       rel="stylesheet"
@@ -90,6 +97,7 @@
     <link rel="stylesheet" href="css/sponsors.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/footer.css" />
 
     <!-- JS Files -->
@@ -150,7 +158,30 @@
             </div>
           </div>
         </div>
-        <!-- <a class="btn application-link">APPLY NOW</a> -->
+
+        <!-- <div id="application-div" class="btn">
+          <div id="application-overlay">
+            <p>Apply Now</p>
+          </div>
+          <div id="application-links">
+            <a href="https://google.com/search?q=mentor">Mentor</a>
+            <a href="https://google.com/search?q=hacker">Hacker</a>
+            <a href="https://google.com/search?q=volunteer">Volunteer</a>
+          </div>
+        </div>
+        <script>
+          document.getElementById("application-div").onclick = () => {
+            document.getElementById("application-div").style.animation = "appexpand .2s linear forwards";
+            document.querySelector("#application-overlay p").style.animation = "appfadeout .2s linear forwards";
+            setTimeout(() => {
+              document.getElementById("application-overlay").style.display = "none";
+              document.getElementById("application-links").style.display = "flex";
+              document.getElementById("application-div").style.padding = "0";
+              document.getElementById("application-links").style.animation = "appfadein .2s linear forwards";
+              document.getElementById("application-div").style.cursor = "unset";
+            }, 200);
+          };
+        </script> -->
         <h2>Applications Open Soon!</h2>
       </div>
     </section>
@@ -231,6 +262,67 @@
         </div>
       </div>
     </section>
+
+    <!-- Image carousel -->
+    <div id="carousel">
+      <section class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5121.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5127.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5147.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5163.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5185.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5191.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5466.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5500.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5586.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5606.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/DSC_0794.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/DSC_0887.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/DSC_0982.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/DSC_0988.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/DSC_0995.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/DSC_0996.jpg" />
+            </li>
+            <li class="splide__slide">
+              <img src="./images/carousel/IMG_5116.jpg" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
 
     <!-- FAQ -->
     <div id="faq" class="anchack"></div>
@@ -951,6 +1043,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <!-- Splide -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide", {
+          type: "loop",
+          autoScroll: {
+            speed: 1.3,
+            rewind: false,
+          },
+          fixedWidth: "fit-content",
+          gap: "16px",
+          pagination: false,
+          arrows: false,
+          drag: "free",
+          snap: false,
+          flickPower: 100,
+        });
+        splide.mount(window.splide.Extensions);
+      });
     </script>
   </body>
 </html>
