@@ -173,29 +173,35 @@
           var inside = false;
           document.getElementById("hero-glass").onmouseenter = () => {
             inside = true;
-            document.getElementById("application-div").style.animation = "appexpand .2s linear forwards";
-            document.querySelector("#application-overlay p").style.animation = "appfadeout .2s linear forwards";
+            document.getElementById("application-div").style.animation = "appexpand .15s linear forwards";
+            document.querySelector("#application-overlay p").style.animation = "appfadeout .15s linear forwards";
             setTimeout(() => {
               if(!inside){return;}
               document.getElementById("application-overlay").style.display = "none";
               document.getElementById("application-links").style.display = "flex";
               document.getElementById("application-div").style.padding = "0";
-              document.getElementById("application-links").style.animation = "appfadein .2s linear forwards";
+              document.getElementById("application-links").style.animation = "appfadein .15s linear forwards";
               document.getElementById("application-div").style.cursor = "unset";
-            }, 200);
+            }, 150);
           };
           document.getElementById("hero-glass").onmouseleave = ()=>{
             inside = false;
             document.getElementById("application-div").style.cursor = "pointer";
-            document.getElementById("application-links").style.animation = "appfadeout .2s linear forwards";
+            document.getElementById("application-links").style.animation = "appfadeout .15s linear forwards";
             setTimeout(() => {
               if(inside){return;}
-              document.getElementById("application-div").style.animation = "appshrink .2s linear forwards";
+              document.getElementById("application-div").style.animation = "appshrink .15s linear forwards";
               document.getElementById("application-div").style.padding = "0.6em 1.5em";
               document.getElementById("application-links").style.display = "none";
-              document.querySelector("#application-overlay p").style.animation = "appfadein .2s linear forwards";
+              document.querySelector("#application-overlay p").style.animation = "appfadein .15s linear forwards";
               document.getElementById("application-overlay").style.display = "block";
-            }, 200);
+            }, 150);
+          }
+
+          if("ontouchstart" in window && matchMedia("(hover: none), (pointer: coarse)").matches){
+            document.getElementById("application-div").onclick = document.getElementById("hero-glass").onmouseenter;
+            document.getElementById("hero-glass").onmouseenter = ()=>{};
+            document.getElementById("hero-glass").onmouseleave = ()=>{};
           }
         </script>
         <!-- <h2>Applications Open Soon!</h2> -->
