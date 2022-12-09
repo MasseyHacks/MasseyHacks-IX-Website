@@ -159,7 +159,7 @@
           </div>
         </div>
 
-        <!-- <div id="application-div" class="btn">
+        <div id="application-div" class="btn">
           <div id="application-overlay">
             <p>Apply Now</p>
           </div>
@@ -170,10 +170,13 @@
           </div>
         </div>
         <script>
+          var inside = false;
           document.getElementById("hero-glass").onmouseenter = () => {
+            inside = true;
             document.getElementById("application-div").style.animation = "appexpand .2s linear forwards";
             document.querySelector("#application-overlay p").style.animation = "appfadeout .2s linear forwards";
             setTimeout(() => {
+              if(!inside){return;}
               document.getElementById("application-overlay").style.display = "none";
               document.getElementById("application-links").style.display = "flex";
               document.getElementById("application-div").style.padding = "0";
@@ -182,19 +185,22 @@
             }, 200);
           };
           document.getElementById("hero-glass").onmouseleave = ()=>{
+            inside = false;
             document.getElementById("application-div").style.cursor = "pointer";
             document.getElementById("application-links").style.animation = "appfadeout .2s linear forwards";
             setTimeout(() => {
+              if(inside){return;}
               document.getElementById("application-div").style.animation = "appshrink .2s linear forwards";
               document.getElementById("application-div").style.padding = "0.6em 1.5em";
               document.getElementById("application-links").style.display = "none";
               document.querySelector("#application-overlay p").style.animation = "appfadein .2s linear forwards";
               document.getElementById("application-overlay").style.display = "block";
-              
             }, 200);
           }
-        </script> -->
-        <h2>Applications Open Soon!</h2>
+
+          
+        </script>
+        <!-- <h2>Applications Open Soon!</h2> -->
       </div>
     </section>
 
