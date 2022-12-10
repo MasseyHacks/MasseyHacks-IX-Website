@@ -66,6 +66,10 @@
   .icons {
     display: flex;
   }
+  .trophy{
+    margin-top:0 !important;
+    margin-left:calc(8vw - 20px) !important;
+  }
 }
 
 .icons {
@@ -88,4 +92,5 @@
 
 .trophy {
   margin-top: 7vh;
+  margin-left:0;
 }
