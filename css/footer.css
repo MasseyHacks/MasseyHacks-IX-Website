@@ -103,10 +103,11 @@ footer {
   flex-grow: 1;
   width: 100%;
   border-width: 2px !important;
+  border-color: #fff !important;
 }
 #mce-EMAIL:focus{
   outline-style: solid;
-  border: 2px solid #6ab9da !important;
+  border: 2px solid #abb0b2 !important;
   box-sizing: border-box;
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
