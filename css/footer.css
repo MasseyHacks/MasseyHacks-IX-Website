@@ -137,3 +137,15 @@ footer {
     font-size: clamp(2rem, 2.1rem, 3rem);
   }
 }
+
+div[for='mce-EMAIL']{
+  width:100% !important;
+  background-color:#6B0505 !important;
+  margin-top:8px !important;
+  margin-bottom:0 !important;
+  padding-left:5px !important;
+}
+
+#mc_embed_signup .foot{
+  width:100% !important;
+}
