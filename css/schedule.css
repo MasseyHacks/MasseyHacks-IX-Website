@@ -7,19 +7,25 @@
 
 .schedule-container {
   display: grid;
-  background-color: rgba(29, 29, 29, 0.8);
   grid-template-rows: auto;
   grid-row-gap: 15px;
   justify-content: center;
   align-items: center;
   margin: 0 2vw;
   border-radius: 10px;
-  color: white;
+
   position: relative;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .schedule-title {
   width: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,14 +38,6 @@
 .schedule-title > h5 {
   margin: 0;
 }
-
-.timeline-wrapper {
-  align-self: self-start;
-  display: flex;
-  /*margin: 20px 0;*/
-  overflow-x: scroll;
-}
-
 .schedule-index {
   margin: 0;
   position: absolute;
@@ -48,28 +46,24 @@
   transform: translate(-50%, -50%);
   font-size: 0.9rem;
   font-weight: bold;
-  text-shadow: 0.08rem 0.08rem var(--pink-colour);
+  text-shadow: 0.08rem 0.08rem pink;
 }
-
+.timeline-wrapper {
+  align-self: self-start;
+  display: flex;
+  /*margin: 20px 0;*/
+  overflow-x: scroll;
+}
 .timeline-wrapper::-webkit-scrollbar-thumb {
   width: initial;
   background: #666;
 }
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-::-webkit-scrollbar-thumb:active {
-  background: #333;
-}
-
 .timeline-cell {
   display: flex;
   align-items: center;
   width: 220px;
   height: 100px;
-  border-left: var(--timeline-label-border-width) solid rgb(80, 80, 80);
+  border-left: var(--timeline-label-border-width) solid rgba(1, 1, 1, 0.25);
 }
 
 .timeline-label {
@@ -78,7 +72,7 @@
   align-items: center;
   transform: translate(-50%, 0);
   height: 30px;
-  color: #33bcb4;
+  color: var(--dark-color);
   font-weight: bold;
 }
 
@@ -90,7 +84,6 @@
 .timeline-col-container:first-child {
   margin-left: 50px;
 }
-
 .timeline-col-container:last-child {
   margin-right: 50px;
 }
@@ -118,13 +111,11 @@
   flex-direction: column;
   height: 20px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 10px;
   /*bottom: 30px;*/
-  transform: translate(0, calc(-200% - 5px));
   z-index: 100;
 }
-
 .timeline-text-section > h5 {
   margin: 0;
   white-space: nowrap;

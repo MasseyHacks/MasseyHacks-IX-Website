@@ -1,7 +1,7 @@
 const colAmt = 32;
 const rowAmt = 3;
 const eventStartTime = 9;
-const lineHeight = "5px";
+const lineHeight = "90px";
 const scheduleSection = document.querySelector(".timeline-wrapper");
 
 class TimeLineGrid {
@@ -44,10 +44,12 @@ class TimeLineGrid {
     textSection.className = "timeline-text-section";
 
     const titleNode = document.createElement("h5");
+    titleNode.style.color = "#434667";
     titleNode.innerHTML = title;
 
     const descriptionNode = document.createElement("p");
     descriptionNode.innerHTML = description;
+    descriptionNode.style.color = "#434667";
 
     textSection.appendChild(titleNode);
     textSection.appendChild(descriptionNode);
@@ -73,7 +75,6 @@ class TimeLineGrid {
       lineNode.style.width = "100%";
       lineNode.style.height = lineHeight;
       lineNode.style.backgroundColor = colour;
-      lineNode.style.position = "relative";
       this.timeCellNodes[col - 1 + colCounter][row - 1].appendChild(lineNode);
       time++;
       colCounter++;
@@ -125,7 +126,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Check In (IP)",
     "9:00AM - 10:00AM | Front Desk",
-    "#FF58C0"
+    "#9EF1EB"
   );
   timeLine.setTimeCell(
     1,
@@ -134,7 +135,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     "Opening Ceremonies",
     "10:30AM - 11:00AM | North Gym",
-    "#FF58C0"
+    "#9EF1EB"
   );
   timeLine.setTimeCell(
     1,
@@ -143,7 +144,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Computer Vision",
     "1:30PM - 2:30PM | Room 103",
-    "#52FAF0"
+    "#ABFF80"
   );
   timeLine.setTimeCell(
     1,
@@ -152,7 +153,7 @@ const initTimeLine = (timeLine) => {
     1,
     "React.js Workshop",
     "2:45PM - 3:45PM | Room 102",
-    "#52FAF0"
+    "#ABFF80"
   );
   timeLine.setTimeCell(
     1,
@@ -161,7 +162,7 @@ const initTimeLine = (timeLine) => {
     0.75,
     "!Light (IP)",
     "5:00PM - 5:45PM | Cafeteria",
-    "#147F78"
+    "#9BA3FF"
   );
   timeLine.setTimeCell(
     1,
@@ -170,7 +171,7 @@ const initTimeLine = (timeLine) => {
     0.75,
     "Cup Stacking (IP)",
     "7:30PM - 8:15PM | Cafeteria",
-    "#147F78"
+    "#9BA3FF"
   );
   timeLine.setTimeCell(
     1,
@@ -179,7 +180,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     "Check-Out (IP)",
     "8:30PM - 9:00PM | Front Desk",
-    "#FF58C0"
+    "#9EF1EB"
   );
   timeLine.setTimeCell(
     1,
@@ -188,7 +189,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Check-In (IP)",
     "8:00AM - 9:00AM | Front Desk",
-    "#FF58C0"
+    "#9EF1EB"
   );
   timeLine.setTimeCell(
     1,
@@ -197,7 +198,7 @@ const initTimeLine = (timeLine) => {
     0.1,
     "Late Submission Deadline",
     "11:45AM",
-    "#FF58C0"
+    "#9EF1EB"
   );
   timeLine.setTimeCell(
     1,
@@ -206,7 +207,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     "Closing Ceremonies",
     "4:30PM - 5:00PM | North Gym",
-    "#FF58C0"
+    "#9EF1EB"
   );
 
   timeLine.setTimeCell(
@@ -216,9 +217,9 @@ const initTimeLine = (timeLine) => {
     1.25,
     "Breakfast Snacks (IP)",
     "9:00AM - 10:15AM | Cafeteria",
-    "#F3DFAD"
+    "#FFA4D5"
   );
-  timeLine.setTimeCell(2, 3, 0, 0.1, "Hacking Starts", "11:00AM", "#FF58C0");
+  timeLine.setTimeCell(2, 3, 0, 0.1, "Hacking Starts", "11:00AM", "#9EF1EB");
   timeLine.setTimeCell(
     2,
     4,
@@ -226,7 +227,7 @@ const initTimeLine = (timeLine) => {
     1.5,
     "Lunch (IP)",
     "12:00PM - 1:30PM | Cafeteria",
-    "#F3DFAD"
+    "#FFA4D5"
   );
   timeLine.setTimeCell(
     2,
@@ -235,7 +236,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Intro to Python I",
     "1:45PM - 2:45PM | Room 149",
-    "#52FAF0"
+    "#ABFF80"
   );
   timeLine.setTimeCell(
     2,
@@ -244,7 +245,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Intro to Python II",
     "3:00PM - 4:00PM | Room 149",
-    "#52FAF0"
+    "#ABFF80"
   );
   timeLine.setTimeCell(
     2,
@@ -253,7 +254,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Github",
     "4:15PM - 5:15PM | Room 103",
-    "#52FAF0"
+    "#ABFF80"
   );
   timeLine.setTimeCell(
     2,
@@ -262,7 +263,7 @@ const initTimeLine = (timeLine) => {
     1.5,
     "Dinner (IP)",
     "6:00PM - 7:30PM | Cafeteria",
-    "#F3DFAD"
+    "#FFA4D5"
   );
   timeLine.setTimeCell(
     2,
@@ -271,7 +272,7 @@ const initTimeLine = (timeLine) => {
     8.5,
     "Hackenger Hunt 2",
     "10:30PM - 7:00AM | Online",
-    "#147F78"
+    "#9BA3FF"
   );
   timeLine.setTimeCell(
     2,
@@ -280,7 +281,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Breakfast (IP)",
     "8:30AM - 9:30AM | Cafeteria",
-    "#F3DFAD"
+    "#FFA4D5"
   );
   timeLine.setTimeCell(
     2,
@@ -289,7 +290,7 @@ const initTimeLine = (timeLine) => {
     0.1,
     "Devpost Deadline",
     "11:00 AM",
-    "#FF58C0"
+    "#9EF1EB"
   );
   timeLine.setTimeCell(
     2,
@@ -298,7 +299,7 @@ const initTimeLine = (timeLine) => {
     1.5,
     "Lunch (IP)",
     "12:30PM - 2:00PM | Cafeteria",
-    "#F3DFAD"
+    "#FFA4D5"
   );
 
   timeLine.setTimeCell(
@@ -308,7 +309,7 @@ const initTimeLine = (timeLine) => {
     2.5,
     "Team Formation",
     "9:00AM - 11:30AM",
-    "#FF58C0"
+    "#9EF1EB"
   );
   timeLine.setTimeCell(
     3,
@@ -317,7 +318,7 @@ const initTimeLine = (timeLine) => {
     4,
     "Hackenger Hunt 1",
     "2:00PM - 6:00PM | Online",
-    "#147F78"
+    "#9BA3FF"
   );
   timeLine.setTimeCell(
     3,
@@ -326,7 +327,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Skribbl.io",
     "10:30PM - 11:30PM | Discord",
-    "#147F78"
+    "#9BA3FF"
   );
   timeLine.setTimeCell(
     3,
@@ -335,7 +336,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Escape Room",
     "12:00AM - 1:00AM | Discord",
-    "#147F78"
+    "#9BA3FF"
   );
   timeLine.setTimeCell(
     3,
@@ -344,7 +345,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Speaking Points",
     "1:30AM - 2:30AM | Discord",
-    "#147F78"
+    "#9BA3FF"
   );
   timeLine.setTimeCell(
     3,
@@ -353,7 +354,7 @@ const initTimeLine = (timeLine) => {
     0.1,
     "Final Submission Deadline",
     "12:00PM | Devpost",
-    "#FF58C0"
+    "#9EF1EB"
   );
   timeLine.setTimeCell(
     3,
@@ -362,7 +363,7 @@ const initTimeLine = (timeLine) => {
     2,
     "Judging",
     "2:00PM - 4:00PM | Cafeteria",
-    "#FF58C0"
+    "#9EF1EB"
   );
 };
 
