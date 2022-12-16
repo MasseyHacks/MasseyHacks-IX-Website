@@ -118,3 +118,10 @@
     width: 60%;
   }
 }
+
+.gold,.bronze,.silver{
+  align-items:stretch;
+}
+.gold img,.bronze img,.silver img{
+  height:100%;
+}
