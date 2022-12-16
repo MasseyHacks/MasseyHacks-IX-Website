@@ -41,7 +41,10 @@ class TimeLineGrid {
     lineNode.style.position = "absolute";
 
     lineNode.onclick = function () {
-      var popup = document.getElementById("myPopup");
+      document.querySelectorAll("#myPopup").forEach(function(e){
+        e.classList.remove("show");
+      })
+      var popup = lineNode.querySelector("#myPopup");
       popup.classList.toggle("show");
     };
     lineNode.classList.add("popup");
