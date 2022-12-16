@@ -180,9 +180,12 @@ a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a):hover::after,
 a:not(.sponsor-obj, #application-links a):hover {
   opacity: 0.8;
 }
+.zoom{
+  transform: scale(1);
+  transition: transform .2s;
+}
 .zoom:hover {
-  transform: scale(1.02);
-  transition: 0.2s;
+  transform: scale(1.05);
 }
 a:not(.sponsor-obj, .jumpstart-apply, .btn) {
   text-decoration: none;
