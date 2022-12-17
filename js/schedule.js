@@ -63,7 +63,19 @@ class TimeLineGrid {
     const infoNode = document.createElement("span");
     infoNode.id = "myPopup";
     infoNode.className = "popuptext";
-    infoNode.innerHTML = info;
+
+    const infoDesc = document.createElement("p");
+    infoDesc.innerHTML = info;
+
+    const infoTitle = document.createElement("h2");
+    infoTitle.innerHTML = title;
+
+    const moreInfo = document.createElement("p");
+    moreInfo.innerHTML = description;
+
+    infoNode.appendChild(infoTitle);
+    infoNode.appendChild(moreInfo);
+    infoNode.appendChild(infoDesc);
 
     textSection.appendChild(titleNode);
     textSection.appendChild(descriptionNode);
@@ -140,7 +152,7 @@ const initTimeLine = (timeLine) => {
     1,
     0,
     1,
-    "Check In",
+    "Check-In",
     "9:00AM - 10:00AM | Front Desk",
     "#9EF1EB",
     "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
@@ -206,7 +218,7 @@ const initTimeLine = (timeLine) => {
     "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
   timeLine.setTimeCell(
-    1,
+    2,
     33,
     0,
     0.5,
