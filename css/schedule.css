@@ -60,6 +60,7 @@
 }
 .timeline-cell {
   display: flex;
+
   align-items: center;
   width: 220px;
   height: 100px;
@@ -102,7 +103,7 @@
   justify-content: center;
   align-items: center;
   transform: translate(50%, 0);
-  color: #33bcb4;
+  color: var(--dark-color);
   font-weight: bold;
 }
 
@@ -137,31 +138,18 @@
 /* The actual popup (appears on top) */
 .popup .popuptext {
   visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
+  width: 500px;
+  background-color: white;
+  color: var(--dark-color);
+
   border-radius: 6px;
-  padding: 8px 0;
+  padding: 10px;
+  box-shadow: 0 0 50px darkgray;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
+  z-index: 999;
+  left: 150%;
   margin-left: -80px;
 }
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
   visibility: visible;

@@ -1,4 +1,4 @@
-const colAmt = 32;
+const colAmt = 34;
 const rowAmt = 4;
 const eventStartTime = 9;
 const lineHeight = "90px";
@@ -41,9 +41,9 @@ class TimeLineGrid {
     lineNode.style.position = "absolute";
 
     lineNode.onclick = function () {
-      document.querySelectorAll("#myPopup").forEach(function(e){
+      document.querySelectorAll("#myPopup").forEach(function (e) {
         e.classList.remove("show");
-      })
+      });
       var popup = lineNode.querySelector("#myPopup");
       popup.classList.toggle("show");
     };
@@ -140,91 +140,92 @@ const initTimeLine = (timeLine) => {
     1,
     0,
     1,
-    "Check In (IP)",
+    "Check In",
     "9:00AM - 10:00AM | Front Desk",
     "#9EF1EB",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
   timeLine.setTimeCell(
     1,
     2,
     0.5,
-    0.5,
+    0.75,
     "Opening Ceremonies",
-    "10:30AM - 11:00AM | North Gym",
+    "10:30AM - 11:15AM | North Gym",
     "#9EF1EB",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
   timeLine.setTimeCell(
     1,
-    5,
-    0.5,
+    3,
+    0.75,
     1,
-    "Computer Vision",
-    "1:30PM - 2:30PM | Room 103",
+    "Workshop 1",
+    "11:45AM - 12:45PM | Room 103",
     "#ABFF80",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
   timeLine.setTimeCell(
     1,
     6,
-    0.75,
+    0.5,
     1,
-    "React.js Workshop",
-    "2:45PM - 3:45PM | Room 102",
+    "Workshop 2",
+    "2:30PM - 3:30PM | Room 102",
     "#ABFF80",
-    "test"
-  );
-  timeLine.setTimeCell(
-    1,
-    9,
-    0,
-    0.75,
-    "!Light (IP)",
-    "5:00PM - 5:45PM | Cafeteria",
-    "#9BA3FF",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
   timeLine.setTimeCell(
     1,
     11,
     0.5,
-    0.75,
-    "Cup Stacking (IP)",
-    "7:30PM - 8:15PM | Cafeteria",
+    1,
+    "Activity 1",
+    "7:30PM - 8:30PM | Cafeteria",
     "#9BA3FF",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
   timeLine.setTimeCell(
     1,
-    12,
+    13,
+    0,
+    1,
+    "Activity 2",
+    "9:00PM - 10:00PM | Cafeteria",
+    "#9BA3FF",
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
+  );
+  timeLine.setTimeCell(
+    1,
+    14,
+    0,
     0.5,
-    0.5,
-    "Check-Out (IP)",
-    "8:30PM - 9:00PM | Front Desk",
+    "Check-Out",
+    "10:00PM - 10:30PM | Front Desk",
     "#9EF1EB",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
+  );
+  timeLine.setTimeCell(
+    1,
+    33,
+    0,
+    0.5,
+    "Check-Out",
+    "5:00PM - 5:30PM | Front Desk",
+    "#9EF1EB",
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
   timeLine.setTimeCell(
     1,
     24,
     0,
     1,
-    "Check-In (IP)",
+    "Check-In",
     "8:00AM - 9:00AM | Front Desk",
     "#9EF1EB",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
-  timeLine.setTimeCell(
-    1,
-    27,
-    0.75,
-    0.1,
-    "Late Submission Deadline",
-    "11:45AM",
-    "#9EF1EB",
-    "test"
-  );
+
   timeLine.setTimeCell(
     1,
     32,
@@ -233,7 +234,7 @@ const initTimeLine = (timeLine) => {
     "Closing Ceremonies",
     "4:30PM - 5:00PM | North Gym",
     "#9EF1EB",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
 
   timeLine.setTimeCell(
@@ -241,163 +242,115 @@ const initTimeLine = (timeLine) => {
     1,
     0,
     1.25,
-    "Breakfast Snacks (IP)",
+    "Breakfast Snacks",
     "9:00AM - 10:15AM | Cafeteria",
     "#FFA4D5",
-    "test"
-  );
-  timeLine.setTimeCell(2, 3, 0, 0.1, "Hacking Starts", "11:00AM", "#9EF1EB");
-  timeLine.setTimeCell(
-    2,
-    4,
-    0,
-    1.5,
-    "Lunch (IP)",
-    "12:00PM - 1:30PM | Cafeteria",
-    "#FFA4D5",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
   timeLine.setTimeCell(
     2,
     5,
+    0,
+    1.25,
+    "Lunch",
+    "1:00PM - 2:15PM | Cafeteria",
+    "#FFA4D5",
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
+  );
+  timeLine.setTimeCell(
+    2,
+    3,
     0.75,
     1,
     "Intro to Python I",
-    "1:45PM - 2:45PM | Room 149",
+    "11:45AM - 12:45PM | Room 149",
     "#ABFF80",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
   timeLine.setTimeCell(
     2,
-    7,
-    0,
+    6,
+    0.5,
     1,
     "Intro to Python II",
-    "3:00PM - 4:00PM | Room 149",
+    "2:30PM - 3:30PM | Room 149",
     "#ABFF80",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
   timeLine.setTimeCell(
     2,
-    8,
-    0.25,
+    9,
+    0,
     1,
-    "Github",
-    "4:15PM - 5:15PM | Room 103",
+    "Workshop 3",
+    "5:00PM - 6:00PM | Room 103",
     "#ABFF80",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
   timeLine.setTimeCell(
     2,
     10,
-    0,
-    1.5,
-    "Dinner (IP)",
-    "6:00PM - 7:30PM | Cafeteria",
+    0.25,
+    1.25,
+    "Dinner",
+    "6:15PM - 7:30PM | Cafeteria",
     "#FFA4D5",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
-  timeLine.setTimeCell(
-    2,
-    14,
-    0.5,
-    8.5,
-    "Hackenger Hunt 2",
-    "10:30PM - 7:00AM | Online",
-    "#9BA3FF",
-    "test"
-  );
+
   timeLine.setTimeCell(
     2,
     24,
     0.5,
     1,
-    "Breakfast (IP)",
+    "Breakfast",
     "8:30AM - 9:30AM | Cafeteria",
     "#FFA4D5",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
-  timeLine.setTimeCell(
-    2,
-    27,
-    0,
-    0.1,
-    "Devpost Deadline",
-    "11:00 AM",
-    "#9EF1EB",
-    "test"
-  );
+
   timeLine.setTimeCell(
     2,
     28,
     0.5,
     1.5,
-    "Lunch (IP)",
+    "Lunch",
     "12:30PM - 2:00PM | Cafeteria",
     "#FFA4D5",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
 
   timeLine.setTimeCell(
     3,
-    1,
+    3,
     0,
-    2.5,
+    0.5,
     "Team Formation",
-    "9:00AM - 11:30AM",
+    "11:00AM - 11:30AM",
     "#9EF1EB",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
   timeLine.setTimeCell(
     3,
-    6,
-    0,
-    4,
+    7,
+    0.5,
+    1.5,
     "Hackenger Hunt 1",
-    "2:00PM - 6:00PM | Online",
+    "3:30PM - 5:00PM | Online",
     "#9BA3FF",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
   timeLine.setTimeCell(
     3,
-    14,
-    0.5,
-    1,
-    "Skribbl.io",
-    "10:30PM - 11:30PM | Discord",
-    "#9BA3FF",
-    "test"
-  );
-  timeLine.setTimeCell(
-    3,
-    16,
+    32,
     0,
-    1,
-    "Escape Room",
-    "12:00AM - 1:00AM | Discord",
-    "#9BA3FF",
-    "test"
-  );
-  timeLine.setTimeCell(
-    3,
-    17,
     0.5,
-    1,
-    "Speaking Points",
-    "1:30AM - 2:30AM | Discord",
+    "Activity 3",
+    "4:00PM - 4:30PM | Discord",
     "#9BA3FF",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
-  timeLine.setTimeCell(
-    3,
-    28,
-    0,
-    0.1,
-    "Final Submission Deadline",
-    "12:00PM | Devpost",
-    "#9EF1EB",
-    "test"
-  );
+
   timeLine.setTimeCell(
     3,
     30,
@@ -406,7 +359,7 @@ const initTimeLine = (timeLine) => {
     "Judging",
     "2:00PM - 4:00PM | Cafeteria",
     "#9EF1EB",
-    "test"
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
 };
 
