@@ -66,7 +66,10 @@
   height: 100px;
   border-left: var(--timeline-label-border-width) solid rgba(1, 1, 1, 0.25);
 }
-
+.timeline-cell h5 {
+  font-weight: bold;
+  color: var(--dark-color);
+}
 .timeline-label {
   display: flex;
   justify-content: center;
