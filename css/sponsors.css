@@ -30,6 +30,18 @@
   line-height: 1.5rem;
 }
 
+.gold,.silver,.bronze{
+  display:block !important;
+  text-align:center;
+}
+.gold > a,.silver > a,.bronze > a{
+  margin:32px;
+  vertical-align:middle !important;
+}
+.gold > img,.bronze > img,.silver > img{
+  height:100%;
+}
+
 .bronze img {
   max-height: 7.8rem;
   max-width: min(17.2rem, 100%);
