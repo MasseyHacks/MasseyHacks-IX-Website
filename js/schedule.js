@@ -16,7 +16,11 @@ class TimeLineGrid {
         const colNode = document.createElement("div");
         colNode.className = "timeline-cell";
 
+        const divvy = document.createElement("div");
+        divvy.className = "divvy";
+
         this.colContainerNodes[col].appendChild(colNode);
+        this.colContainerNodes[col].appendChild(divvy);
         this.timeCellNodes[col].push(colNode);
       }
     }

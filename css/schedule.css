@@ -85,6 +85,17 @@
   position: relative;
 }
 
+.divvy{
+  position:absolute;
+  width:50%;
+  border-left:2px dotted #888;
+  border-right:2px dotted #888;
+  top:0;
+  margin-top:35px;
+  height:calc(100% - 35px);
+  z-index:-10000;
+}
+
 .timeline-col-container:first-child {
   margin-left: 50px;
 }
