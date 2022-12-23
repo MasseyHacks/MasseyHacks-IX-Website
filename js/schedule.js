@@ -23,6 +23,13 @@ class TimeLineGrid {
         this.colContainerNodes[col].appendChild(colNode);
         this.colContainerNodes[col].appendChild(divvy);
         this.timeCellNodes[col].push(colNode);
+
+        if(row==rowAmt-1&&col==colAmt-1){
+          const d = document.createElement("div");
+          d.className = "divvy";
+          d.style.marginLeft = "calc(50% - 2px)";
+          this.colContainerNodes[col].appendChild(d);
+        }
       }
     }
   }
