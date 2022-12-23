@@ -44,14 +44,14 @@ class TimeLineGrid {
     lineNode.style.height = lineHeight;
     lineNode.style.backgroundColor = colour;
     lineNode.style.position = "absolute";
-    lineNode.style.boxShadow = "0 3px 10px rgb(0 0 0 / 0.2)";
-    if(remainingGap==1){
+    lineNode.style.boxShadow = "0 3px 10px -8px rgb(0 0 0 / 0.3)";
+    if (remainingGap == 1) {
       lineNode.style.marginLeft = "2px";
     }
-    if(startGap==0&&(duration%1==0)){
+    if (startGap == 0 && duration % 1 == 0) {
       lineNode.style.width = `calc(${lineNode.style.width} - 2px)`;
     }
-    if(startGap==0&&(duration%1==0.5)){
+    if (startGap == 0 && duration % 1 == 0.5) {
       lineNode.style.width = `calc(${lineNode.style.width} - 4px)`;
     }
 
@@ -64,7 +64,7 @@ class TimeLineGrid {
     };
     lineNode.classList.add("popup");
     lineNode.classList.add("evcl");
-    lineNode.setAttribute("data-evcl",++evcln);
+    lineNode.setAttribute("data-evcl", ++evcln);
 
     const textSection = document.createElement("div");
     textSection.className = "timeline-text-section";
@@ -106,7 +106,7 @@ class TimeLineGrid {
     lineNode.appendChild(infoNode);
 
     this.timeCellNodes[col - 1][row - 1].appendChild(lineNode);
-    return [durationFilled,lineNode.querySelector("#myPopup")];
+    return [durationFilled, lineNode.querySelector("#myPopup")];
   }
 
   setTimeCell(row, col, startGap, duration, title, description, colour, info) {
@@ -123,13 +123,13 @@ class TimeLineGrid {
     let time = f[0];
     let el = f[1];
     let colCounter = 1;
-    while (time + 1 <= Math.floor(duration)) {
+    while (time + 2 <= Math.floor(duration)) {
       const lineNode = document.createElement("div");
       lineNode.style.width = "100%";
       lineNode.style.height = lineHeight;
       lineNode.style.backgroundColor = colour;
       lineNode.classList.add("evcl");
-      lineNode.setAttribute("data-evcl",evcln);
+      lineNode.setAttribute("data-evcl", evcln);
       lineNode.onclick = function () {
         document.querySelectorAll("#myPopup").forEach(function (e) {
           e.classList.remove("show");
@@ -149,7 +149,7 @@ class TimeLineGrid {
       lineNode.style.height = lineHeight;
       lineNode.style.backgroundColor = colour;
       lineNode.classList.add("evcl");
-      lineNode.setAttribute("data-evcl",evcln);
+      lineNode.setAttribute("data-evcl", evcln);
       lineNode.onclick = function () {
         document.querySelectorAll("#myPopup").forEach(function (e) {
           e.classList.remove("show");
@@ -157,10 +157,10 @@ class TimeLineGrid {
         el.classList.toggle("show");
       };
 
-      lineNode.style.boxShadow = "0 3px 10px -8px rgb(0 0 0 / 0.2)";
+      lineNode.style.boxShadow = "0 3px 10px -8px rgb(0 0 0 / 0.3)";
       lineNode.style.borderRadius = "10px";
       lineNode.style.position = "relative";
-      if(((startGap+duration)%1!=0)){
+      if ((startGap + duration) % 1 != 0) {
         lineNode.style.width = `calc(${lineNode.style.width} - 4px)`;
       }
       this.timeCellNodes[col - 1 + colCounter][row - 1].appendChild(lineNode);
@@ -429,19 +429,29 @@ window.onload = () => {
   initTimeLine(timeLine);
 
   var prev = undefined;
-  document.body.addEventListener("click",function(e){
-    if(!e.target.classList.contains("evcl")){
+  document.body.addEventListener("click", function (e) {
+    if (!e.target.classList.contains("evcl")) {
       var f = document.querySelector(".popuptext.show");
-      if(f){f.classList.remove("show");}
+      if (f) {
+        f.classList.remove("show");
+      }
       prev = undefined;
-    }else{
-      if(prev)console.log(prev.getAttribute("data-evcl"),e.target.getAttribute("data-evcl"));
-      if(prev&&prev.getAttribute("data-evcl")==e.target.getAttribute("data-evcl")&&document.querySelector(".popuptext.show")){
+    } else {
+      if (prev)
+        console.log(
+          prev.getAttribute("data-evcl"),
+          e.target.getAttribute("data-evcl")
+        );
+      if (
+        prev &&
+        prev.getAttribute("data-evcl") == e.target.getAttribute("data-evcl") &&
+        document.querySelector(".popuptext.show")
+      ) {
         document.querySelector(".popuptext.show").classList.remove("show");
         prev = undefined;
-      }else{
+      } else {
         prev = e.target;
       }
     }
-  })
+  });
 };
