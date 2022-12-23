@@ -429,7 +429,4 @@ window.onload = () => {
       if(f){f.classList.remove("show");}
     }
   })
-  document.querySelector(".schedule-container").onclick = function(e){
-    
-  }
 };
