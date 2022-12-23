@@ -406,4 +406,10 @@ const initTimeLine = (timeLine) => {
 window.onload = () => {
   const timeLine = new TimeLineGrid();
   initTimeLine(timeLine);
+  document.querySelector(".schedule-container").onclick = function(e){
+    if(e.target.className=="timeline-cell"){
+      var f = document.querySelector(".popuptext.show");
+      if(f){f.classList.remove("show");}
+    }
+  }
 };
