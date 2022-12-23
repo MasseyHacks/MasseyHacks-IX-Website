@@ -43,6 +43,7 @@ class TimeLineGrid {
     lineNode.style.height = lineHeight;
     lineNode.style.backgroundColor = colour;
     lineNode.style.position = "absolute";
+    lineNode.style.boxShadow = "0 3px 10px rgb(0 0 0 / 0.2)";
 
     lineNode.onclick = function () {
       document.querySelectorAll("#myPopup").forEach(function (e) {
@@ -61,8 +62,12 @@ class TimeLineGrid {
     titleNode.innerHTML = title;
 
     const descriptionNode = document.createElement("p");
-    descriptionNode.innerHTML = description;
+    const [a, b] = description.split(" | ");
+    descriptionNode.innerHTML = a;
     descriptionNode.style.color = "#434667";
+    const descriptionNode2 = document.createElement("p");
+    descriptionNode2.innerHTML = b;
+    descriptionNode2.style.color = "#434667";
 
     const infoNode = document.createElement("span");
     infoNode.id = "myPopup";
@@ -83,6 +88,8 @@ class TimeLineGrid {
 
     textSection.appendChild(titleNode);
     textSection.appendChild(descriptionNode);
+    textSection.appendChild(descriptionNode2);
+
     lineNode.appendChild(textSection);
     lineNode.appendChild(infoNode);
 
@@ -112,11 +119,16 @@ class TimeLineGrid {
       colCounter++;
     }
 
+    // if there is a remainder at the end
     if (duration - time > 0.001 && time < duration) {
       const lineNode = document.createElement("div");
-      lineNode.style.width = `${(duration - time) * 100}%`;
+      lineNode.style.width = `${(duration - time) * 100 + 10}%`;
+      lineNode.style.marginLeft = "-30px";
       lineNode.style.height = lineHeight;
       lineNode.style.backgroundColor = colour;
+
+      lineNode.style.boxShadow = "0 3px 10px -8px rgb(0 0 0 / 0.2)";
+      lineNode.style.borderRadius = "20px";
       lineNode.style.position = "relative";
       this.timeCellNodes[col - 1 + colCounter][row - 1].appendChild(lineNode);
     }
