@@ -200,3 +200,11 @@
     opacity: 1;
   }
 }
+
+.popup *{
+  pointer-events: none;
+  cursor:pointer;
+}
+.evcl{
+  cursor: pointer;
+}

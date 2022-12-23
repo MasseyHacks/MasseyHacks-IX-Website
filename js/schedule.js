@@ -62,6 +62,7 @@ class TimeLineGrid {
       popup.classList.toggle("show");
     };
     lineNode.classList.add("popup");
+    lineNode.classList.add("evcl");
 
     const textSection = document.createElement("div");
     textSection.className = "timeline-text-section";
@@ -103,11 +104,11 @@ class TimeLineGrid {
     lineNode.appendChild(infoNode);
 
     this.timeCellNodes[col - 1][row - 1].appendChild(lineNode);
-    return durationFilled;
+    return [durationFilled,lineNode.querySelector("#myPopup")];
   }
 
   setTimeCell(row, col, startGap, duration, title, description, colour, info) {
-    let time = this.addFirstCell(
+    let f = this.addFirstCell(
       row,
       col,
       startGap,
@@ -117,12 +118,21 @@ class TimeLineGrid {
       colour,
       info
     );
+    let time = f[0];
+    let el = f[1];
     let colCounter = 1;
     while (time + 1 <= Math.floor(duration)) {
       const lineNode = document.createElement("div");
       lineNode.style.width = "100%";
       lineNode.style.height = lineHeight;
       lineNode.style.backgroundColor = colour;
+      lineNode.classList.add("evcl");
+      lineNode.onclick = function () {
+        document.querySelectorAll("#myPopup").forEach(function (e) {
+          e.classList.remove("show");
+        });
+        el.classList.toggle("show");
+      };
       this.timeCellNodes[col - 1 + colCounter][row - 1].appendChild(lineNode);
       time++;
       colCounter++;
@@ -135,6 +145,13 @@ class TimeLineGrid {
       lineNode.style.marginLeft = "-30px";
       lineNode.style.height = lineHeight;
       lineNode.style.backgroundColor = colour;
+      lineNode.classList.add("evcl");
+      lineNode.onclick = function () {
+        document.querySelectorAll("#myPopup").forEach(function (e) {
+          e.classList.remove("show");
+        });
+        el.classList.toggle("show");
+      };
 
       lineNode.style.boxShadow = "0 3px 10px -8px rgb(0 0 0 / 0.2)";
       lineNode.style.borderRadius = "20px";
@@ -406,10 +423,14 @@ const initTimeLine = (timeLine) => {
 window.onload = () => {
   const timeLine = new TimeLineGrid();
   initTimeLine(timeLine);
-  document.querySelector(".schedule-container").onclick = function(e){
-    if(e.target.className=="timeline-cell"){
+  document.body.addEventListener("click",function(e){
+    console.log(e.target);
+    if(!e.target.classList.contains("evcl")){
       var f = document.querySelector(".popuptext.show");
       if(f){f.classList.remove("show");}
     }
+  })
+  document.querySelector(".schedule-container").onclick = function(e){
+    
   }
 };
