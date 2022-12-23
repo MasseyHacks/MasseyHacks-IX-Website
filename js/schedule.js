@@ -424,7 +424,6 @@ window.onload = () => {
   const timeLine = new TimeLineGrid();
   initTimeLine(timeLine);
   document.body.addEventListener("click",function(e){
-    console.log(e.target);
     if(!e.target.classList.contains("evcl")){
       var f = document.querySelector(".popuptext.show");
       if(f){f.classList.remove("show");}
