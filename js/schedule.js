@@ -3,6 +3,7 @@ const rowAmt = 4;
 const eventStartTime = 9;
 const lineHeight = "90px";
 const scheduleSection = document.querySelector(".timeline-wrapper");
+var evcln = 1;
 
 class TimeLineGrid {
   timeCellNodes = [];
@@ -63,6 +64,7 @@ class TimeLineGrid {
     };
     lineNode.classList.add("popup");
     lineNode.classList.add("evcl");
+    lineNode.setAttribute("data-evcl",++evcln);
 
     const textSection = document.createElement("div");
     textSection.className = "timeline-text-section";
@@ -127,6 +129,7 @@ class TimeLineGrid {
       lineNode.style.height = lineHeight;
       lineNode.style.backgroundColor = colour;
       lineNode.classList.add("evcl");
+      lineNode.setAttribute("data-evcl",evcln);
       lineNode.onclick = function () {
         document.querySelectorAll("#myPopup").forEach(function (e) {
           e.classList.remove("show");
@@ -146,6 +149,7 @@ class TimeLineGrid {
       lineNode.style.height = lineHeight;
       lineNode.style.backgroundColor = colour;
       lineNode.classList.add("evcl");
+      lineNode.setAttribute("data-evcl",evcln);
       lineNode.onclick = function () {
         document.querySelectorAll("#myPopup").forEach(function (e) {
           e.classList.remove("show");
@@ -423,10 +427,21 @@ const initTimeLine = (timeLine) => {
 window.onload = () => {
   const timeLine = new TimeLineGrid();
   initTimeLine(timeLine);
+
+  var prev = undefined;
   document.body.addEventListener("click",function(e){
     if(!e.target.classList.contains("evcl")){
       var f = document.querySelector(".popuptext.show");
       if(f){f.classList.remove("show");}
+      prev = undefined;
+    }else{
+      if(prev)console.log(prev.getAttribute("data-evcl"),e.target.getAttribute("data-evcl"));
+      if(prev&&prev.getAttribute("data-evcl")==e.target.getAttribute("data-evcl")&&document.querySelector(".popuptext.show")){
+        document.querySelector(".popuptext.show").classList.remove("show");
+        prev = undefined;
+      }else{
+        prev = e.target;
+      }
     }
   })
 };

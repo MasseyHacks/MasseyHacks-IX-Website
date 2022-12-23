@@ -151,7 +151,7 @@
 
 /* The actual popup (appears on top) */
 .popup .popuptext {
-  visibility: hidden;
+  /* visibility: hidden; */
   width: 500px;
   background-color: white;
   color: var(--dark-color);
@@ -163,12 +163,16 @@
   z-index: 999;
   left: 150%;
   margin-left: -80px;
+
+  opacity:0;
+  transition:opacity .3s;
 }
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
-  visibility: visible;
+  /* visibility: visible;
   -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
+  animation: fadeIn 1s; */
+  opacity:1;
 }
 .popuptext h2 {
   color: var(--dark-color);
