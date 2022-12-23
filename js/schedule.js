@@ -154,7 +154,7 @@ class TimeLineGrid {
       };
 
       lineNode.style.boxShadow = "0 3px 10px -8px rgb(0 0 0 / 0.2)";
-      lineNode.style.borderRadius = "20px";
+      lineNode.style.borderRadius = "10px";
       lineNode.style.position = "relative";
       if(((startGap+duration)%1!=0)){
         lineNode.style.width = `calc(${lineNode.style.width} - 4px)`;
@@ -383,7 +383,7 @@ const initTimeLine = (timeLine) => {
     0,
     0.5,
     "Team Formation",
-    "11:00AM - 11:30AM",
+    "11:00AM - 11:30AM | North Gym",
     "#9EF1EB",
     "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
