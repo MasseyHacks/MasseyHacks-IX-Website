@@ -44,6 +44,15 @@ class TimeLineGrid {
     lineNode.style.backgroundColor = colour;
     lineNode.style.position = "absolute";
     lineNode.style.boxShadow = "0 3px 10px rgb(0 0 0 / 0.2)";
+    if(remainingGap==1){
+      lineNode.style.marginLeft = "2px";
+    }
+    if(startGap==0&&(duration%1==0)){
+      lineNode.style.width = `calc(${lineNode.style.width} - 2px)`;
+    }
+    if(startGap==0&&(duration%1==0.5)){
+      lineNode.style.width = `calc(${lineNode.style.width} - 4px)`;
+    }
 
     lineNode.onclick = function () {
       document.querySelectorAll("#myPopup").forEach(function (e) {
@@ -130,6 +139,9 @@ class TimeLineGrid {
       lineNode.style.boxShadow = "0 3px 10px -8px rgb(0 0 0 / 0.2)";
       lineNode.style.borderRadius = "20px";
       lineNode.style.position = "relative";
+      if(((startGap+duration)%1!=0)){
+        lineNode.style.width = `calc(${lineNode.style.width} - 4px)`;
+      }
       this.timeCellNodes[col - 1 + colCounter][row - 1].appendChild(lineNode);
     }
   }
