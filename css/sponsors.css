@@ -54,11 +54,24 @@
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.gold > div:first-child{
+  margin-top:20px;
+}
+.gold > div{
+  width:100%;
+  padding-left:30px;
+  padding-right:30px;
+  box-sizing:border-box;
+  display:block;
+  margin-bottom:20px;
+}
 .gold img {
   max-height: 20rem;
-  max-width: min(50rem, 100%);
+  max-width: min(32rem, 100%);
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 .gold {
   /* border: solid gold 2px !important; */
