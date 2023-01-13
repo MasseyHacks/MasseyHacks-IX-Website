@@ -91,6 +91,10 @@ class TimeLineGrid {
     const infoNode = document.createElement("span");
     infoNode.id = "myPopup";
     infoNode.className = "popuptext";
+    if(row==1||row==2){
+      infoNode.style.bottom = "unset";
+      infoNode.style.top = "0";
+    }
 
     const infoDesc = document.createElement("p");
     infoDesc.innerHTML = info;
@@ -204,7 +208,7 @@ class TimeLineGrid {
 
 const initTimeLine = (timeLine) => {
   timeLine.setTimeCell(
-    1,
+    4,
     1,
     0,
     1,
