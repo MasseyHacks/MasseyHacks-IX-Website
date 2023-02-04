@@ -159,7 +159,7 @@ section > div {
   width: 100%;
 }
 
-a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a)::after {
+a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a, #mlh-trust-badge)::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -177,7 +177,7 @@ a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a):hover::after,
   width: 100%;
 }
 
-a:not(.sponsor-obj, #application-links a):hover {
+a:not(.sponsor-obj, #application-links a, #mlh-trust-badge):hover {
   opacity: 0.8;
 }
 .zoom{
