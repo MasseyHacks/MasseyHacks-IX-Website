@@ -170,7 +170,7 @@ a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a, #mlh-trust-bad
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a, #mlh-trust-badge):hover::after,
+a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a):hover::after,
 #faq .cursor-pointer:not(.collapsed) a::after {
   left: 0;
   right: auto;
