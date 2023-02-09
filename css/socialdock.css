@@ -1,0 +1,15 @@
+#socialdock{
+    position:fixed;
+    z-index:999;
+    top:calc(var(--nav-burger-width) + 3.6rem + 16px);
+    left:2rem;
+    width:calc(var(--nav-burger-width) + 1.6rem);
+    height:fit-content;/*calc(100vh - (var(--nav-burger-width) + 3.6rem + 16px) - 2rem);*/
+    margin:0.3rem;
+    display:flex;
+    flex-direction:column;
+}
+#socialdock i{
+    font-size:36px;
+    margin:12px;
+}
