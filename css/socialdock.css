@@ -4,12 +4,27 @@
     top:calc(var(--nav-burger-width) + 3.6rem + 16px);
     left:2rem;
     width:calc(var(--nav-burger-width) + 1.6rem);
-    height:fit-content;/*calc(100vh - (var(--nav-burger-width) + 3.6rem + 16px) - 2rem);*/
+    height:fit-content;
     margin:0.3rem;
     display:flex;
     flex-direction:column;
 }
+#socialdock a{
+    height:calc(var(--nav-burger-width) + 1.6rem);
+    width:calc(var(--nav-burger-width) + 1.6rem);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:var(--dark-color) !important;
+    opacity:1;
+    transition:opacity .2s;
+}
+#socialdock a:hover{
+    opacity:0.8;
+}
 #socialdock i{
-    font-size:36px;
-    margin:12px;
+    font-size:calc(var(--nav-burger-width) + 1.6rem - 22px);
+    line-height:calc(var(--nav-burger-width) + 1.6rem - 22px);
+    text-align:center;
 }
