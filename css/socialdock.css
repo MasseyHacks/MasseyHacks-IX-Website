@@ -8,9 +8,11 @@
     margin:0.3rem;
     display:flex;
     flex-direction:column;
+    padding-top:5px;
+    padding-bottom:5px;
 }
 #socialdock a{
-    height:calc(var(--nav-burger-width) + 1.6rem);
+    height:calc(var(--nav-burger-width) + 1.6rem - 10px);
     width:calc(var(--nav-burger-width) + 1.6rem);
     display:flex;
     justify-content:center;
