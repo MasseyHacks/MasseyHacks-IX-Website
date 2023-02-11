@@ -11,13 +11,13 @@ const toggleNavLinks = () => {
     navBurgerNode.style.borderBottomRightRadius = 0;
     navBurgerNode.style.borderBottomLeftRadius = 0;
 
-    if(window.innerHeight<730){
+    if(window.innerHeight<734){
       document.getElementById("socialdock").style.opacity = "0";
     }else{
       setTimeout(()=>{
         var r = document.querySelector("body > header > nav").getBoundingClientRect();
         document.getElementById("socialdock").style.transform = "unset";
-        document.getElementById("socialdock").style.top = r.bottom+"px";
+        document.getElementById("socialdock").style.top = r.bottom+4+"px";
       },210);
     }
   }
