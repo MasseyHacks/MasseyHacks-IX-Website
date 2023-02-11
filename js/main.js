@@ -12,7 +12,6 @@ const toggleNavLinks = () => {
     navBurgerNode.style.borderBottomLeftRadius = 0;
 
     if(window.innerHeight<730){
-      // document.getElementById("socialdock").style.display = "none";
       document.getElementById("socialdock").style.opacity = "0";
     }else{
       setTimeout(()=>{
@@ -25,7 +24,6 @@ const toggleNavLinks = () => {
   else {
     navBurgerNode.style.borderRadius = "1rem";
 
-    // document.getElementById("socialdock").style.display = "block";
     document.getElementById("socialdock").style.opacity = "0.8";
     document.getElementById("socialdock").style.transform = "translate(0,-50%)";
     document.getElementById("socialdock").style.top = "50%";
