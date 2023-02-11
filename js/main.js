@@ -10,9 +10,18 @@ const toggleNavLinks = () => {
   if (navBurgerNode.classList.contains("nav-burger-active")){
     navBurgerNode.style.borderBottomRightRadius = 0;
     navBurgerNode.style.borderBottomLeftRadius = 0;
+
+    setTimeout(()=>{
+      var r = document.querySelector("body > header > nav").getBoundingClientRect();
+      document.getElementById("socialdock").style.transform = "unset";
+      document.getElementById("socialdock").style.top = r.bottom+"px";
+    },220);
   }
   else {
     navBurgerNode.style.borderRadius = "1rem";
+
+    document.getElementById("socialdock").style.transform = "translate(0,-50%)";
+    document.getElementById("socialdock").style.top = "50%";
   }
 };
 
