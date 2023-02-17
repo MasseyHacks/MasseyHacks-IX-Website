@@ -11,22 +11,12 @@ const toggleNavLinks = () => {
     navBurgerNode.style.borderBottomRightRadius = 0;
     navBurgerNode.style.borderBottomLeftRadius = 0;
 
-    if(window.innerHeight<734){
-      document.getElementById("socialdock").style.opacity = "0";
-    }else{
-      setTimeout(()=>{
-        var r = document.querySelector("body > header > nav").getBoundingClientRect();
-        document.getElementById("socialdock").style.transform = "unset";
-        document.getElementById("socialdock").style.top = r.bottom+4+"px";
-      },210);
-    }
+    document.getElementById("socialdock").style.opacity = "0";
   }
   else {
     navBurgerNode.style.borderRadius = "1rem";
 
     document.getElementById("socialdock").style.opacity = "0.8";
-    document.getElementById("socialdock").style.transform = "translate(0,-50%)";
-    document.getElementById("socialdock").style.top = "50%";
   }
 };
 
