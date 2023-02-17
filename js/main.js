@@ -10,9 +10,13 @@ const toggleNavLinks = () => {
   if (navBurgerNode.classList.contains("nav-burger-active")){
     navBurgerNode.style.borderBottomRightRadius = 0;
     navBurgerNode.style.borderBottomLeftRadius = 0;
+
+    document.getElementById("socialdock").style.opacity = "0";
   }
   else {
     navBurgerNode.style.borderRadius = "1rem";
+
+    document.getElementById("socialdock").style.opacity = "0.8";
   }
 };
 
