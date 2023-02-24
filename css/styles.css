@@ -159,7 +159,8 @@ section > div {
   width: 100%;
 }
 
-a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a)::after {
+a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a,
+#mlh-trust-badge, #socialdock a, #socialhoriz a)::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -170,14 +171,16 @@ a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a)::after {
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-a:not(.sponsor-obj, .jumpstart-apply, .btn, #application-links a):hover::after,
+a:not(.sponsor-obj, .jumpstart-apply, .btn,
+#application-links a, #socialdock a, #socialhoriz a):hover::after,
 #faq .cursor-pointer:not(.collapsed) a::after {
   left: 0;
   right: auto;
   width: 100%;
 }
 
-a:not(.sponsor-obj, #application-links a):hover {
+a:not(.sponsor-obj, #application-links a,
+#mlh-trust-badge, #socialdock a, #socialhoriz a):hover {
   opacity: 0.8;
 }
 .zoom{

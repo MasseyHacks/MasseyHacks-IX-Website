@@ -47,6 +47,7 @@ nav {
   border-radius: 1rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+  transition:border-radius .2s;
 }
 
 .nav-burger > div {

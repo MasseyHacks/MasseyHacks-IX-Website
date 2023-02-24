@@ -21,6 +21,10 @@
   margin: 2rem;
 }
 
+#sponsors img, #partners img{
+  vertical-align: middle;
+}
+
 .sponsor_prompt {
   display: flex;
   flex-direction: column;
