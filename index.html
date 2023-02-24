@@ -1144,7 +1144,7 @@
         var $window = $(window),
           $html = $("#hero-glass");
         function resize() {
-          if ($window.width() < 600) {
+          if ($window.width() <= 600) {
             return $html.removeClass("glass-card");
           }
           $html.addClass("glass-card");
