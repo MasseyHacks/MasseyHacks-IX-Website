@@ -109,7 +109,7 @@ html {
 }
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif !important;
   /*background: url("../assets/bg.svg") no-repeat center center fixed;
   background-size: cover;*/
   height: 100%;

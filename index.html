@@ -1,119 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>MasseyHacks IX</title>
 
+		<!-- Preconnect -->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+		<link rel="preconnect" href="https://cdn.jsdelivr.net">
+		<link rel="preconnect" href="https://s3.amazonaws.com">
 
 		<!-- Google Verification -->
-		<meta
-			name="google-site-verification"
-			content="mNqGBDXOgqYZfCAW6P3Ab-7dv--ePsjdB9RrqpEOe3k" />
+		<meta name="google-site-verification" content="mNqGBDXOgqYZfCAW6P3Ab-7dv--ePsjdB9RrqpEOe3k">
 
 		<!-- Meta -->
-		<meta
-			name="description"
-			content="Windsor-Essex's 9th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks IX!" />
-		<link rel="canonical" href="https://masseyhacks.ca/" />
-		<meta property="og:title" content="MasseyHacks IX" />
-		<meta
-			property="og:description"
-			content="Windsor-Essex's 9th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks IX!" />
-		<meta
-			property="og:image"
-			content="https://masseyhacks.ca/assets/logo.svg" />
-		<meta property="og:url" content="https://masseyhacks.ca/" />
-		<meta property="og:type" content="website" />
-
-		<meta property="twitter:title" content="MasseyHacks IX" />
-		<meta
-			property="twitter:description"
-			content="Windsor-Essex's 9th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks IX!" />
+		<link rel="canonical" href="https://masseyhacks.ca/">
+		<meta name="description" content="Windsor-Essex's 9th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks IX!">
+		<meta property="og:title" content="MasseyHacks IX">
+		<meta property="og:description" content="Windsor-Essex's 9th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks IX!">
+		<meta property="og:image" content="https://masseyhacks.ca/assets/logo.svg">
+		<meta property="og:url" content="https://masseyhacks.ca/">
+		<meta property="og:type" content="website">
+		<meta property="twitter:title" content="MasseyHacks IX">
+		<meta property="twitter:description" content="Windsor-Essex's 9th high school hackathon. Create memories and guide the story of your STEM journey at MasseyHacks IX!">
 
 		<!-- Favicon -->
-		<link rel="icon" href="favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="manifest" href="/site.webmanifest" />
-
-		<!-- Bootstrap -->
-		<!-- <link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-			crossorigin="anonymous"
-		/> -->
-		<link
-			rel="preload"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-			as="style"
-			onload="this.onload=null;this.rel='stylesheet'" />
-		<noscript
-			><link
-				rel="stylesheet"
-				href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-				integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-				crossorigin="anonymous"
-		/></noscript>
-
-		<!-- Font Awesome -->
-		<!-- <link
-			rel="stylesheet"
-			href="./css/fa-all.css" /> -->
-		<link
-			rel="preload"
-			href="./css/fa-all.css"
-			as="style"
-			onload="this.onload=null;this.rel='stylesheet'" />
-		<noscript
-			><link
-				rel="stylesheet"
-				href="./css/fa-all.css"
-		/></noscript>
-
-		<!-- Splide -->
-		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
 
 		<!-- AOS -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" />
+		<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-		<!-- Termynal -->
-		<link rel="stylesheet" href="css/termynal.css" />
+		<!-- Bootstrap -->
+		<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-		<!-- Stylesheet -->
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/scrollbar.css" />
-		<link rel="stylesheet" href="css/clouds.css" />
-		<link rel="stylesheet" href="css/hero.css" />
-		<link rel="stylesheet" href="css/faq.css" />
-		<link rel="stylesheet" href="css/sponsors.css" />
-		<link rel="stylesheet" href="css/nav.css" />
-		<link rel="stylesheet" href="css/about.css" />
-		<link rel="stylesheet" href="css/carousel.css" />
-		<link rel="stylesheet" href="css/footer.css" />
-		<link rel="stylesheet" href="css/schedule.css" />
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/hero.css">
+		<link rel="stylesheet" href="css/scrollbar.css">
+		<link rel="stylesheet" href="css/clouds.css">
+		<link rel="stylesheet" href="css/nav.css">
 		<link rel="stylesheet" href="css/socialdock.css">
+		<link rel="preload" href="css/termynal.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<link rel="preload" href="css/faq.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<link rel="preload" href="css/sponsors.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<link rel="preload" href="css/about.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<link rel="preload" href="css/carousel.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<link rel="preload" href="css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<link rel="preload" href="css/schedule.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<link rel="preload" href="css/classic-10_7_dtp.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
+		<!-- Font Awesome -->
+		<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+		<!-- Splide -->
+		<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	
 		<!-- JS Files -->
-		<script defer type="text/javascript" src="js/main.js"></script>
-		<script defer type="text/javascript" src="js/countdown.js"></script>
-		<script defer type="text/javascript" src="js/init.js"></script>
-		<script defer type="text/javascript" src="js/anchorscroll.js"></script>
+		<script src="js/main.js" defer></script>
+		<script src="js/countdown.js" defer></script>
+		<script src="js/init.js" defer></script>
+		<script src="js/anchorscroll.js" defer></script>
+		<script src="js/termynal.js" data-termynal-container="#termynal" defer></script>
+		<!-- <script src="js/schedule.js" defer></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js" defer></script>
 	</head>
-
 	<body>
-		<!-- Navigation Menu -->
+		<!-- Navigation menu -->
 		<header>
 			<nav>
 				<div class="bg-white nav-burger" onclick="toggleNavLinks()">
@@ -121,7 +81,6 @@
 					<div></div>
 					<div></div>
 				</div>
-
 				<ul class="bg-white unstyled-list nav-links">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
@@ -133,13 +92,11 @@
 			</nav>
 		</header>
 
+		<!-- Background -->
 		<div id="background"></div>
 
 		<!-- Social icons on left side -->
 		<div id="socialdock" class="glass-card bg-white">
-			<!-- <a href="#home">
-				<i class="fas fa-arrow-square-up"></i>
-			</a> -->
 			<a href="https://instagram.com/masseyhacks" target="_blank">
 				<i class="fab fa-instagram-square"></i>
 			</a>
@@ -155,9 +112,6 @@
 			<a href="https://www.facebook.com/masseyhacks" target="_blank">
 				<i class="fab fa-facebook-square"></i>
 			</a>
-			<!-- <a href="#footer">
-				<i class="fas fa-arrow-square-down"></i>
-			</a> -->
 		</div>
 
 		<!-- Clouds -->
@@ -172,7 +126,7 @@
 		<!-- Hero -->
 		<section id="home" data-aos="zoom-out" data-aos-duration="600">
 			<div id="hero-glass" class="glass-card">
-				<img src="assets/logo.svg" alt="Logo" class="hero-logo" />
+				<img src="assets/logo.svg" alt="Logo" class="hero-logo">
 				<h1>MasseyHacks IX</h1>
 				<p class="hero-date">May 6–7th, 2023</p>
 				<div class="countdown-border">
@@ -260,21 +214,11 @@
 		</section>
 
 		<!-- About -->
-		<section
-			id="about"
-			class="row"
-			style="grid-auto-flow: row"
-			data-aos="fade-right">
-			<!-- the termynal container -->
-			<div
-				class="col-md-9 shadow termynal"
-				id="termynal"
-				data-termynal
-				data-ty-typeDelay="40"
-				data-ty-lineDelay="700">
+		<section id="about" class="row" style="grid-auto-flow: row" data-aos="fade-right">
+			<!-- The termynal container -->
+			<div class="col-md-9 shadow termynal" id="termynal" data-termynal data-ty-typeDelay="40" data-ty-lineDelay="700">
 				<span data-ty="input" data-ty-prompt=">>>">what_is_masseyhacks()</span>
-				<span data-ty
-					>MasseyHacks is a high school hackathon — an event perfect for
+				<span data-ty>MasseyHacks is a high school hackathon — an event perfect for
 					students fascinated by the world of technology. This 24-hour event is
 					an opportunity for students to explore the realm of computer science
 					and bring their creative ideas to life by developing a project of
@@ -283,11 +227,10 @@
 					to join us as a hacker to participate in workshops, engage in
 					countless activities, and meet other like-minded students! Create
 					memories and guide the story of your STEM journey at MasseyHacks
-					IX!</span
-				>
+					IX!</span>
 			</div>
 
-			<!-- Students Attended -->
+			<!-- Students attended -->
 			<div class="col-md-3 icons">
 				<div id="cap" class="cap">
 					<div class="content">
@@ -296,13 +239,7 @@
 						</div>
 						<div class="stats">
 							<h2>
-								<span
-									class="js-counter"
-									data-counted="false"
-									data-target-value="1300"
-									data-time="800"
-									>0</span
-								>+
+								<span class="js-counter" data-counted="false" data-target-value="1300" data-time="800">0</span>+
 							</h2>
 						</div>
 						<div>
@@ -319,13 +256,7 @@
 						</div>
 						<div class="stats">
 							<h2>
-								$<span
-									class="js-counter"
-									data-counted="false"
-									data-target-value="22000"
-									data-time="800"
-									>0</span
-								>+
+								$<span class="js-counter" data-counted="false" data-target-value="22000" data-time="800">0</span>+
 							</h2>
 						</div>
 						<div>
@@ -342,78 +273,69 @@
 				<div class="splide__track">
 					<ul class="splide__list">
 						<li class="splide__slide">
-							<img src="./images/carousel/IMG_5121.webp" />
+							<img src="./images/carousel/IMG_5121.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/IMG_5127.webp" />
+							<img src="./images/carousel/IMG_5127.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/IMG_5147.webp" />
+							<img src="./images/carousel/IMG_5147.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/IMG_5163.webp" />
+							<img src="./images/carousel/IMG_5163.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/IMG_5185.webp" />
+							<img src="./images/carousel/IMG_5185.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/IMG_5191.webp" />
+							<img src="./images/carousel/IMG_5191.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/IMG_5466.webp" />
+							<img src="./images/carousel/IMG_5466.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/IMG_5500.webp" />
+							<img src="./images/carousel/IMG_5500.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/IMG_5586.webp" />
+							<img src="./images/carousel/IMG_5586.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/IMG_5606.webp" />
+							<img src="./images/carousel/IMG_5606.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/DSC_0794.webp" />
+							<img src="./images/carousel/DSC_0794.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/DSC_0887.webp" />
+							<img src="./images/carousel/DSC_0887.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/DSC_0982.webp" />
+							<img src="./images/carousel/DSC_0982.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/DSC_0988.webp" />
+							<img src="./images/carousel/DSC_0988.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/DSC_0995.webp" />
+							<img src="./images/carousel/DSC_0995.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/DSC_0996.webp" />
+							<img src="./images/carousel/DSC_0996.webp" loading="lazy">
 						</li>
 						<li class="splide__slide">
-							<img src="./images/carousel/IMG_5116.webp" />
+							<img src="./images/carousel/IMG_5116.webp" loading="lazy">
 						</li>
 					</ul>
 				</div>
 			</section>
 		</div>
 
-		<!-- Schedule of the Event -->
+		<!-- Schedule -->
 		<!-- <section id="schedule">
 			<div class="schedule-container">
 				<div class="schedule-title">
-					<h1
-						style="
-							color: #434667;
-							text-shadow: 0.125rem 0.125rem var(--pink-colour);
-							font-weight: bold;
-						">
+					<h1 style="color:#434667;text-shadow:0.125rem 0.125rem var(--pink-colour);font-weight:bold;">
 						Schedule
 					</h1>
-					<h5
-						style="
-							color: #434667;
-							text-shadow: 0.085rem 0.085rem var(--pink-colour);
-						">
+					<h5 style="color:#434667;text-shadow: 0.085rem 0.085rem var(--pink-colour);">
 						Click on the activities for more info!
 					</h5>
 				</div>
@@ -613,9 +535,7 @@
 							data-bs-parent="#accordl">
 							<div class="accordion-body">
 								All hackers must abide by the
-								<a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-									>Code of Conduct</a
-								>.
+								<a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a>.
 							</div>
 						</div>
 					</div>
@@ -720,9 +640,7 @@
 							data-bs-parent="#accordr">
 							<div class="accordion-body">
 								MasseyHacks will be held at
-								<a href="https://goo.gl/maps/4AGgpJL6Ha6UbMEx8"
-									>Vincent Massey Secondary School</a
-								>
+								<a href="https://goo.gl/maps/4AGgpJL6Ha6UbMEx8">Vincent Massey Secondary School</a>
 								at 1800 Liberty St, Windsor, ON.
 							</div>
 						</div>
@@ -749,9 +667,7 @@
 							data-bs-parent="#accordr">
 							<div class="accordion-body">
 								Unfortunately,
-								<span style="font-weight: bold"
-									>we cannot provide overnight accommodation</span
-								>
+								<span style="font-weight:bold">we cannot provide overnight accommodation</span>
 								at the MasseyHacks venue, so hackers will be required to leave
 								the venue Saturday evening and return to the venue Sunday
 								morning. However, we will still be providing mentorship and
@@ -844,7 +760,7 @@
 						href="https://www.alturanft.com/"
 						class="sponsor-obj zoom"
 						target="_blank"
-						><img alt="Altura" class="zoom" src="images/sponsors/gold/altura.png"
+						><img alt="Altura" class="zoom" src="images/sponsors/gold/altura.png" loading="lazy"
 					/></a>
 				</div>
 				<div>
@@ -852,7 +768,7 @@
 						href="https://www.investwindsoressex.com/en/index.aspx"
 						class="sponsor-obj zoom"
 						target="_blank"
-						><img alt="Invest WindsorEssex" class="zoom" src="images/sponsors/gold/investwe.png"
+						><img alt="Invest WindsorEssex" class="zoom" src="images/sponsors/gold/investwe.png" loading="lazy"
 					/></a>
 				</div>
 			</div>
@@ -885,7 +801,7 @@
 					class="sponsor-obj zoom"
 					href="https://gen.xyz/"
 					target="_blank"
-					><img alt="Gen.XYZ" class="zoom" src="images/sponsors/bronze/xyz.png"
+					><img alt="Gen.XYZ" class="zoom" src="images/sponsors/bronze/xyz.png" loading="lazy"
 				/></a>
 				<a
 					class="sponsor-obj zoom"
@@ -894,19 +810,19 @@
 					><img
 						alt="Taskade"
 						class="zoom"
-						src="images/sponsors/bronze/taskade-logo-vector.svg"
+						src="images/sponsors/bronze/taskade-logo-vector.svg" loading="lazy"
 				/></a>
 				<a
 					class="sponsor-obj zoom"
 					href="https://www.wfcu.ca/Personal/"
 					target="_blank"
-					><img alt="WFCU" class="zoom" src="images/sponsors/bronze/wfcu.png"
+					><img alt="WFCU" class="zoom" src="images/sponsors/bronze/wfcu.png" loading="lazy"
 				/></a>
 				<a
 					class="sponsor-obj zoom"
 					href="https://www.interviewcake.com/"
 					target="_blank"
-					><img alt="Interview Cake" class="zoom" src="images/sponsors/bronze/interview_cake.svg"
+					><img alt="Interview Cake" class="zoom" src="images/sponsors/bronze/interview_cake.svg" loading="lazy"
 				/></a>
 			</div>
 		</section>
@@ -971,10 +887,6 @@
 						class="col-lg-5 d-flex align-items-center justify-content-center">
 						<div class="d-inline-block footer-email-social">
 							<!-- Begin Mailchimp Signup Form -->
-							<link
-								href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css"
-								rel="stylesheet"
-								type="text/css" />
 							<div>
 								<div id="mc_embed_signup" class="d-block w-100">
 									<form
@@ -1023,10 +935,8 @@
 													value="" />
 											</div>
 										</div>
-										<script
-											type="text/javascript"
-											src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-										<script type="text/javascript">
+										<script src="js/mc-validate.js"></script>
+										<script>
 											(function ($) {
 												window.fnames = new Array();
 												window.ftypes = new Array();
@@ -1102,21 +1012,9 @@
 			</div>
 		</footer>
 
-		<!-- Bootstrap -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-			integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-			crossorigin="anonymous"></script>
-
-		<!-- jquery -->
-
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-			integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"></script>
-
-		<script type="text/javascript">
+		<!-- jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script>
 			(function ($) {
 				var $window = $(window),
 					$html = $("#hero-glass");
@@ -1129,10 +1027,6 @@
 				$window.resize(resize).trigger("resize");
 			})(jQuery);
 		</script>
-
-		<!-- include and initialise termynal.js -->
-		<script src="js/termynal.js" data-termynal-container="#termynal"></script>
-		<script src="js/schedule.js?v=2"></script>
 
 		<!-- AOS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
