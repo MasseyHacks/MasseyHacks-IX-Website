@@ -34,27 +34,27 @@
   line-height: 1.5rem;
 }
 
-.gold,.silver,.bronze{
+.gold,.silver,.bronze,.partner{
   display:block !important;
   text-align:center;
 }
-.gold > a,.silver > a,.bronze > a{
+.gold > a,.silver > a,.bronze > a,.partner > img{
   margin:32px;
   vertical-align:middle !important;
 }
-.gold > img,.bronze > img,.silver > img{
+.gold > img,.bronze > img,.silver > img,.partner > img{
   height:100%;
 }
 
 .bronze img {
   max-height: 7.8rem;
-  max-width: min(17.2rem, 100%);
+  max-width: min(17.2rem, 80%);
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 .silver img {
-  max-height: 18.75rem;
-  max-width: min(25rem, 100%);
+  max-height: 14.75rem;
+  max-width: min(18rem, 80%);
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
@@ -71,7 +71,7 @@
 }
 .gold img {
   max-height: 20rem;
-  max-width: min(32rem, 100%);
+  max-width: min(34rem, 100%);
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   margin-left: 0 !important;
@@ -94,7 +94,7 @@
 }
 .partner img {
   max-height: 15rem;
-  width: 10em;
+  max-width: min(32rem, 100%);
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
@@ -124,9 +124,9 @@
   #carousel {
     width: 90%;
   }
-  .partner img {
+  /* .partner img {
     width: 13em;
-  }
+  } */
 }
 
 @media only screen and (min-width: 768px) {
