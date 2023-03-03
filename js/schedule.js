@@ -435,7 +435,7 @@ const initTimeLine = (timeLine) => {
   );
 };
 
-window.onload = () => {
+window.addEventListener("load",()=>{
   const timeLine = new TimeLineGrid();
   initTimeLine(timeLine);
 
@@ -465,4 +465,4 @@ window.onload = () => {
       }
     }
   });
-};
+});
