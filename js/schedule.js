@@ -245,7 +245,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     "Check-Out",
     "5:00PM - 5:30PM | Front Desk",
-    "#9EF1EB",
+    "#FFC3C3",
     "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
   timeLine.setTimeCell(
@@ -255,7 +255,7 @@ const initTimeLine = (timeLine) => {
     1,
     "Check-In",
     "8:00AM - 9:00AM | Front Desk",
-    "#9EF1EB",
+    "#FFC3C3",
     "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
 
