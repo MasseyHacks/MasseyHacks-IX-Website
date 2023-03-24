@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding-bottom:30px;
+  padding-bottom: 30px;
 }
 
 .timeline-wrapper::-webkit-scrollbar {
@@ -14,14 +14,14 @@
 
 .timeline-wrapper::-webkit-scrollbar-track {
   background-color: #0000003b;
-  border-radius:1rem 1rem 1rem 1rem;
-  margin-left:.5rem;
-  margin-right:.5rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .timeline-wrapper::-webkit-scrollbar-thumb {
   background: #434667;
-  border-radius:1rem 1rem 1rem 1rem;
+  border-radius: 1rem 1rem 1rem 1rem;
   width: 80%;
 }
 
@@ -32,7 +32,6 @@
 .timeline-wrapper::-webkit-scrollbar-thumb:active {
   background: #333;
 }
-
 
 .schedule-container {
   display: grid;
@@ -190,20 +189,20 @@
   padding: 1em;
   box-shadow: 0 0 50px darkgray;
   position: absolute;
-  bottom:0;
+  bottom: 0;
   z-index: 999999;
-  left:0;
+  left: 0;
 
-  opacity:0;
-  transition:opacity .3s;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
+/* Toggle this class when clicking on the popup container (hide and show the popup) 
 .popup .show {
   /* visibility: visible;
   -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s; */
-  opacity:1;
-}
+  animation: fadeIn 1s; 
+  opacity: 1;
+}*/
 .popuptext h2 {
   color: var(--dark-color);
   font-size: large;
