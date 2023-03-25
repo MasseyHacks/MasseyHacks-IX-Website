@@ -156,6 +156,22 @@
         <i class="fab fa-facebook-square"></i>
       </a>
     </div>
+    <script>
+      window.addEventListener("load",()=>{
+        window.addEventListener("scroll",()=>{
+          var social = document.getElementById("socialdock").getBoundingClientRect();
+          var schedule = document.querySelector(".schedule-container").getBoundingClientRect();
+          if(window.innerWidth<=1200){
+            return;
+          }
+          if((social.top<schedule.bottom&&social.top>schedule.top)||(social.bottom<schedule.bottom&&social.bottom>schedule.top)){
+            document.getElementById("socialdock").style.opacity = "0";
+          }else{
+            document.getElementById("socialdock").style.opacity = "1";
+          }
+        });
+      });
+    </script>
 
     <!-- Clouds -->
     <div id="clouds">
