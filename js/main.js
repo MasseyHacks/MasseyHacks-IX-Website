@@ -3,6 +3,8 @@ const navLinksNode = document.querySelector(".nav-links");
 const navBurgerNode = document.querySelector(".nav-burger");
 const navNode = document.querySelector("nav");
 
+window.hamOpened = false;
+
 const toggleNavLinks = () => {
   navLinksNode.classList.toggle("nav-links-active");
   navBurgerNode.classList.toggle("nav-burger-active");
@@ -12,11 +14,14 @@ const toggleNavLinks = () => {
     navBurgerNode.style.borderBottomLeftRadius = 0;
 
     document.getElementById("socialdock").style.opacity = "0";
+    window.hamOpened = true;
   }
   else {
     navBurgerNode.style.borderRadius = "1rem";
 
     document.getElementById("socialdock").style.opacity = "0.8";
+    window.hamOpened = false;
+    window.dispatchEvent(new Event("scroll"));
   }
 };
 // Updating folder-width css variable
