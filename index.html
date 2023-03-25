@@ -161,13 +161,13 @@
         window.addEventListener("scroll",()=>{
           var social = document.getElementById("socialdock").getBoundingClientRect();
           var schedule = document.querySelector(".schedule-container").getBoundingClientRect();
-          if(window.innerWidth<=1200){
+          if(window.innerWidth<=1200||window.hamOpened){
             return;
           }
           if((social.top<schedule.bottom&&social.top>schedule.top)||(social.bottom<schedule.bottom&&social.bottom>schedule.top)){
             document.getElementById("socialdock").style.opacity = "0";
           }else{
-            document.getElementById("socialdock").style.opacity = "1";
+            document.getElementById("socialdock").style.opacity = "0.8";
           }
         });
       });
