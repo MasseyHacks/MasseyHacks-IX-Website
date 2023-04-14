@@ -208,6 +208,16 @@ class TimeLineGrid {
 
 const initTimeLine = (timeLine) => {
   timeLine.setTimeCell(
+    4,
+    3,
+    0,
+    24,
+    "Hacking Period",
+    "11:00AM - 11:00AM | ",
+    "#ffffff",
+    "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
+  );
+  timeLine.setTimeCell(
     1,
     1,
     0,
@@ -221,7 +231,7 @@ const initTimeLine = (timeLine) => {
     1,
     2,
     0.5,
-    0.75,
+    0.5,
     "Opening Ceremonies",
     "10:30AM - 11:15AM | North Gym",
     "#9EF1EB",
@@ -326,7 +336,7 @@ const initTimeLine = (timeLine) => {
     24,
     0.5,
     1,
-    "Breakfast",
+    "Pancake Breakfast",
     "8:30AM - 9:30AM | Cafeteria",
     "#FFA4D5",
     "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
