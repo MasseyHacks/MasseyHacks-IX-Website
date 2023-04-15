@@ -43,7 +43,7 @@ class TimeLineGrid {
       lineNode.style.width = `${duration * 100}%`;
     } else {
       durationFilled = remainingGap;
-      lineNode.style.width = `${remainingGap * 100}%`;
+      lineNode.style.width = `${remainingGap * 110}%`;
     }
 
     lineNode.style.left = `${(startGap - Math.floor(startGap)) * 100}%`;
