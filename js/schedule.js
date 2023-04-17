@@ -293,7 +293,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     0.5,
     "Opening Ceremony",
-    "10:30AM - 11:15AM | North Gym",
+    "10:30AM - 11:00AM | North Gym",
     "#9EF1EB",
     "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
   );
@@ -428,7 +428,7 @@ const initTimeLine = (timeLine) => {
     7,
     0.5,
     1.5,
-    "Scavenger Hunt",
+    "Hackenger Hunt",
     "3:30PM - 5:00PM | In person",
     "#9BA3FF",
     "In this workshop, we’ll walk you through getting started with CockroachDB Serverless and provide an introduction to SQL and ORMs. Then you’ll learn from one of our many Waterloo alums how to build a RESTful API using Python. This workshop will be hands on, so bring your laptops. You’ll leave with a working API powered by CockroachDB Serverless! "
