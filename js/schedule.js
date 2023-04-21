@@ -208,13 +208,54 @@ class TimeLineGrid {
 
 const initTimeLine = (timeLine) => {
   timeLine.setTimeCell(
+    2,
+    9,
+    0,
+    1,
+    "Soldering",
+    "5:00PM - 6:00PM | ",
+    "#ABFF80",
+    "Join IEEE Windsor for a hands-on soldering workshop designed to take your electronics skills to the next level! Our instructors will guide you through the process and basic techniques of soldering through-hole electrical components. You’ll learn how to identify components and read PCB layouts, use soldering tools. By the end of the workshop, you’ll have a board of your own to take home!"
+  );
+  timeLine.setTimeCell(
+    1,
+    9,
+    0,
+    1,
+    "Github",
+    "5:00PM - 6:00PM | ",
+    "#ABFF80",
+    "GitHub is also a great tool to learn for anyone looking to work on their own personal projects and make sure they’re not lost somewhere in the depths of their computer, and instead are easily accessible on the go, whenever and wherever they need it."
+  );
+  timeLine.setTimeCell(
+    1,
+    11,
+    0.5,
+    0.5,
+    "Careers in Tech",
+    "7:30PM - 8:00PM | ",
+    "#ABFF80",
+    "What does working in the technology industry look like? Explore different career paths and journeys through this workshop and AMA from two Massey alumni!"
+  );
+
+  timeLine.setTimeCell(
+    1,
+    12,
+    0,
+    1,
+    "Docker",
+    "8:00PM - 9:00PM | ",
+    "#ABFF80",
+    "In this interactive session, you'll gain a solid understanding of Docker's basic concepts. You'll learn how to create, run, and manage Docker containers, as well as how to use Docker to build and deploy applications in a variety of environments. By the end of the workshop, you'll have the confidence to start using Docker on your own, and you'll be well on your way to unlocking the power of containerization for your development and deployment workflows."
+  );
+  timeLine.setTimeCell(
     4,
     3,
     0,
     24,
     "Hacking Period",
     "11:00AM - 11:00AM | ",
-    "#ffffff",
+    "#a8d4ff",
     ""
   );
   timeLine.setTimeCell(
@@ -366,9 +407,19 @@ const initTimeLine = (timeLine) => {
     0.75,
     1,
     "Intro to Python I",
-    "11:45AM - 12:45PM | Location Undecided",
+    "11:45AM - 12:45PM | ",
     "#ABFF80",
-    ""
+    "Introduction to Python I is an introduction to programming and, by extension, how to think like a programmer. The inspiration for this workshop is the educational programming language Logo. Logo derives from the Greek logos, meaning word or thought. This language has been implemented and embraced by dozens of institutions from Apple to MIT since it's creation in 1967. Most people think of Logo as that language where you draw lines with a turtle. In the Introduction to Python I workshop we will be using the turtle module to introduce the fundamental programming concepts of variables, sequence, selection and repetition."
+  );
+  timeLine.setTimeCell(
+    1,
+    3,
+    0.75,
+    1,
+    "Flask",
+    "11:45AM - 12:45PM | ",
+    "#ABFF80",
+    "Looking to explore the exciting world of web development? Join us for our Intro to Flask workshop! Flask is a popular backend web framework that allows developers to quickly build web applications using Python. In this workshop, you'll learn how to create a basic Flask application, handle user input, and display data from a database. Flask is a great gateway into backend web development, making this workshop perfect for beginners who are interested in exploring this field. Don't miss out on the chance to jumpstart your web development skills with Flask!"
   );
   timeLine.setTimeCell(
     2,
@@ -376,7 +427,17 @@ const initTimeLine = (timeLine) => {
     0.5,
     1,
     "Intro to Python II",
-    "2:30PM - 3:30PM | Location Undecided",
+    "2:30PM - 3:30PM | ",
+    "#ABFF80",
+    "Introduction to Python II builds on the foundation of knowledge established in Introduction to Python I. We will introduce lists, functions and recursion to implement classic fractals like the Koch Snowflake and  the Dragon curve. "
+  );
+  timeLine.setTimeCell(
+    1,
+    6,
+    0.5,
+    1,
+    "Intro to Unity",
+    "2:30PM - 3:30PM | ",
     "#ABFF80",
     ""
   );
