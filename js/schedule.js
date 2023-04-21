@@ -255,7 +255,7 @@ const initTimeLine = (timeLine) => {
     24,
     "Hacking Period",
     "11:00AM - 11:00AM | ",
-    "#b0d3f7",
+    "#a8d4ff",
     ""
   );
   timeLine.setTimeCell(
