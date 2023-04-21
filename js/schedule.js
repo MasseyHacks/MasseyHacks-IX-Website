@@ -255,7 +255,7 @@ const initTimeLine = (timeLine) => {
     24,
     "Hacking Period",
     "11:00AM - 11:00AM | ",
-    "#B7FFC0",
+    "#A7C7E7",
     ""
   );
   timeLine.setTimeCell(
@@ -409,7 +409,7 @@ const initTimeLine = (timeLine) => {
     "Intro to Python I",
     "11:45AM - 12:45PM | ",
     "#ABFF80",
-    ""
+    "Introduction to Python I is an introduction to programming and, by extension, how to think like a programmer. The inspiration for this workshop is the educational programming language Logo. Logo derives from the Greek logos, meaning word or thought. This language has been implemented and embraced by dozens of institutions from Apple to MIT since it's creation in 1967. Most people think of Logo as that language where you draw lines with a turtle. In the Introduction to Python I workshop we will be using the turtle module to introduce the fundamental programming concepts of variables, sequence, selection and repetition."
   );
   timeLine.setTimeCell(
     1,
@@ -429,7 +429,7 @@ const initTimeLine = (timeLine) => {
     "Intro to Python II",
     "2:30PM - 3:30PM | ",
     "#ABFF80",
-    ""
+    "Introduction to Python II builds on the foundation of knowledge established in Introduction to Python I. We will introduce lists, functions and recursion to implement classic fractals like the Koch Snowflake and  the Dragon curve. "
   );
   timeLine.setTimeCell(
     1,
