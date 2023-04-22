@@ -284,7 +284,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     1,
     "Skribbl.io",
-    "12:30AM - 1:30AM | ",
+    "12:30AM - 1:30AM | Online",
     "#E1BDFF",
     ""
   );
@@ -294,7 +294,7 @@ const initTimeLine = (timeLine) => {
     0,
     1,
     "League of Legends",
-    "2:00AM - 3:00AM | ",
+    "2:00AM - 3:00AM | Online",
     "#E1BDFF",
     "Team up with a group of 5 to destroy your opponent's base and claim bragging rights!"
   );
