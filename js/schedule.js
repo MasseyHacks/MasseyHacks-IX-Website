@@ -215,17 +215,17 @@ const initTimeLine = (timeLine) => {
     "Soldering",
     "5:00PM - 6:00PM | ",
     "#ABFF80",
-    "Join IEEE Windsor for a hands-on soldering workshop designed to take your electronics skills to the next level! Our instructors will guide you through the process and basic techniques of soldering through-hole electrical components. You’ll learn how to identify components and read PCB layouts, use soldering tools. By the end of the workshop, you’ll have a board of your own to take home!"
+    "Join IEEE Windsor for a hands-on soldering workshop designed to take your electronics skills to the next level! Our instructors will guide you through the process and basic techniques of soldering through-hole electrical components. You'll learn how to identify components and read PCB layouts, use soldering tools. By the end of the workshop, you'll have a board of your own to take home!"
   );
   timeLine.setTimeCell(
     1,
     9,
     0,
     1,
-    "Github",
+    "GitHub",
     "5:00PM - 6:00PM | ",
     "#ABFF80",
-    "GitHub is also a great tool to learn for anyone looking to work on their own personal projects and make sure they’re not lost somewhere in the depths of their computer, and instead are easily accessible on the go, whenever and wherever they need it."
+    "GitHub is also a great tool to learn for anyone looking to work on their own personal projects and make sure they're not lost somewhere in the depths of their computer, and instead are easily accessible on the go, whenever and wherever they need it."
   );
   timeLine.setTimeCell(
     1,
@@ -276,7 +276,7 @@ const initTimeLine = (timeLine) => {
     "Karaoke",
     "9:00PM - 10:00PM | ",
     "#E1BDFF",
-    "Ignore all your stage fright, pick up the mic and sing to your heart’s content. Have fun!"
+    "Ignore all your stage fright, pick up the mic and sing to your heart's content. Have fun!"
   );
   timeLine.setTimeCell(
     2,
@@ -284,7 +284,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     1,
     "Skribbl.io",
-    "12:30AM - 1:00AM | ",
+    "12:30AM - 1:30AM | Online",
     "#E1BDFF",
     ""
   );
@@ -294,9 +294,9 @@ const initTimeLine = (timeLine) => {
     0,
     1,
     "League of Legends",
-    "2:00AM - 3:00AM | ",
+    "2:00AM - 3:00AM | Online",
     "#E1BDFF",
-    "Team up with a group of 5 to destroy your opponent’s base and claim bragging rights!"
+    "Team up with a group of 5 to destroy your opponent's base and claim bragging rights!"
   );
   timeLine.setTimeCell(
     2,
@@ -429,7 +429,7 @@ const initTimeLine = (timeLine) => {
     "Intro to Python II",
     "2:30PM - 3:30PM | ",
     "#ABFF80",
-    "Introduction to Python II builds on the foundation of knowledge established in Introduction to Python I. We will introduce lists, functions and recursion to implement classic fractals like the Koch Snowflake and  the Dragon curve. "
+    "Introduction to Python II builds on the foundation of knowledge established in Introduction to Python I. We will introduce lists, functions and recursion to implement classic fractals like the Koch Snowflake and the Dragon curve."
   );
   timeLine.setTimeCell(
     1,
@@ -490,9 +490,9 @@ const initTimeLine = (timeLine) => {
     0,
     18,
     "Hackenger Hunt",
-    "6:00PM - 12:00PM | ",
+    "6:00PM - 12:00PM | Online",
     "#9BA3FF",
-    ""
+    "Put your puzzle-solving skills to the test with the Hackenger Hunt! In this event, you'll be given 15 creative tech-related challenges to solve, ranging from easy to difficult. Top scorers will receive stickers, limited-edition swag, and/or a gift card!"
   );
 
   timeLine.setTimeCell(
