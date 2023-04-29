@@ -213,7 +213,7 @@ const initTimeLine = (timeLine) => {
     0,
     1,
     "Soldering",
-    "5:00PM - 6:00PM | ",
+    "5:00PM - 6:00PM | Cafeteria",
     "#ABFF80",
     "Join IEEE Windsor for a hands-on soldering workshop designed to take your electronics skills to the next level! Our instructors will guide you through the process and basic techniques of soldering through-hole electrical components. You'll learn how to identify components and read PCB layouts, use soldering tools. By the end of the workshop, you'll have a board of your own to take home!"
   );
@@ -223,7 +223,7 @@ const initTimeLine = (timeLine) => {
     0,
     1,
     "GitHub",
-    "5:00PM - 6:00PM | ",
+    "5:00PM - 6:00PM | Room 101",
     "#ABFF80",
     "GitHub is also a great tool to learn for anyone looking to work on their own personal projects and make sure they're not lost somewhere in the depths of their computer, and instead are easily accessible on the go, whenever and wherever they need it."
   );
@@ -233,7 +233,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     0.5,
     "Careers in Tech",
-    "7:30PM - 8:00PM | ",
+    "7:30PM - 8:00PM | Cafeteria",
     "#ABFF80",
     "What does working in the technology industry look like? Explore different career paths and journeys through this workshop and AMA from two Massey alumni!"
   );
@@ -244,7 +244,7 @@ const initTimeLine = (timeLine) => {
     0,
     1,
     "Docker",
-    "8:00PM - 9:00PM | ",
+    "8:00PM - 9:00PM | Room 101",
     "#ABFF80",
     "In this interactive session, you'll gain a solid understanding of Docker's basic concepts. You'll learn how to create, run, and manage Docker containers, as well as how to use Docker to build and deploy applications in a variety of environments. By the end of the workshop, you'll have the confidence to start using Docker on your own, and you'll be well on your way to unlocking the power of containerization for your development and deployment workflows."
   );
@@ -264,7 +264,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     2,
     "Cupstacking",
-    "3:30PM - 5:00PM | ",
+    "3:30PM - 5:00PM | Cafeteria",
     "#E1BDFF",
     "A MasseyHacks favourite is back in the game! Reach for the stars by creating the tallest possible cup tower!"
   );
@@ -274,7 +274,7 @@ const initTimeLine = (timeLine) => {
     0,
     1,
     "Karaoke",
-    "9:00PM - 10:00PM | ",
+    "9:00PM - 10:00PM | Cafeteria",
     "#E1BDFF",
     "Ignore all your stage fright, pick up the mic and sing to your heart's content. Have fun!"
   );
@@ -287,6 +287,16 @@ const initTimeLine = (timeLine) => {
     "12:30AM - 1:30AM | Online",
     "#E1BDFF",
     ""
+  );
+  timeLine.setTimeCell(
+    2,
+    19,
+    0.5,
+    1.25,
+    "Minecraft Bedwars",
+    "3:30AM - 4:45AM | Online",
+    "#E1BDFF",
+    "Team up with a group of 5 to destroy your opponent’s base and claim bragging rights!"
   );
   timeLine.setTimeCell(
     2,
@@ -304,7 +314,7 @@ const initTimeLine = (timeLine) => {
     0,
     1.5,
     "Therapy Dogs",
-    "10:00AM - 11:30AM | ",
+    "10:00AM - 11:30AM | Room 101",
     "#E1BDFF",
     ""
   );
@@ -314,7 +324,7 @@ const initTimeLine = (timeLine) => {
     0,
     0.5,
     "Trivia",
-    "4:00PM - 4:30PM | ",
+    "4:00PM - 4:30PM | Cafeteria",
     "#E1BDFF",
     "Nothing to do while waiting for closing ceremonies? Come relax with some MasseyHacks trivia and some snacks to spend the time!"
   );
@@ -402,22 +412,22 @@ const initTimeLine = (timeLine) => {
     ""
   );
   timeLine.setTimeCell(
-    2,
+    1,
     3,
     0.75,
     1,
     "Intro to Python I",
-    "11:45AM - 12:45PM | ",
+    "11:45AM - 12:45PM | Room 102",
     "#ABFF80",
     "Introduction to Python I is an introduction to programming and, by extension, how to think like a programmer. The inspiration for this workshop is the educational programming language Logo. Logo derives from the Greek logos, meaning word or thought. This language has been implemented and embraced by dozens of institutions from Apple to MIT since it's creation in 1967. Most people think of Logo as that language where you draw lines with a turtle. In the Introduction to Python I workshop we will be using the turtle module to introduce the fundamental programming concepts of variables, sequence, selection and repetition."
   );
   timeLine.setTimeCell(
-    1,
+    2,
     3,
     0.75,
     1,
     "Flask",
-    "11:45AM - 12:45PM | ",
+    "11:45AM - 12:45PM | Room 101",
     "#ABFF80",
     "Looking to explore the exciting world of web development? Join us for our Intro to Flask workshop! Flask is a popular backend web framework that allows developers to quickly build web applications using Python. In this workshop, you'll learn how to create a basic Flask application, handle user input, and display data from a database. Flask is a great gateway into backend web development, making this workshop perfect for beginners who are interested in exploring this field. Don't miss out on the chance to jumpstart your web development skills with Flask!"
   );
@@ -427,7 +437,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     1,
     "Intro to Python II",
-    "2:30PM - 3:30PM | ",
+    "2:30PM - 3:30PM | Room 102",
     "#ABFF80",
     "Introduction to Python II builds on the foundation of knowledge established in Introduction to Python I. We will introduce lists, functions and recursion to implement classic fractals like the Koch Snowflake and the Dragon curve."
   );
@@ -437,7 +447,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     1,
     "Intro to Unity",
-    "2:30PM - 3:30PM | ",
+    "2:30PM - 3:30PM | Room 101",
     "#ABFF80",
     ""
   );
@@ -480,7 +490,7 @@ const initTimeLine = (timeLine) => {
     0,
     0.5,
     "Team Formation",
-    "11:00AM - 11:30AM | ",
+    "11:00AM - 11:30AM | North Gym",
     "#E1BDFF",
     "Unsure who to work with or interested in making some new friends? Find your perfect partners and join up to create the project of your dreams!"
   );
