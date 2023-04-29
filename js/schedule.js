@@ -222,7 +222,7 @@ const initTimeLine = (timeLine) => {
     9,
     0,
     1,
-    "Github",
+    "GitHub",
     "5:00PM - 6:00PM | Room 101",
     "#ABFF80",
     "GitHub is also a great tool to learn for anyone looking to work on their own personal projects and make sure they’re not lost somewhere in the depths of their computer, and instead are easily accessible on the go, whenever and wherever they need it."
@@ -284,7 +284,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     1,
     "Skribbl.io",
-    "12:30AM - 1:00AM | Online",
+    "12:30AM - 1:30AM | Online",
     "#E1BDFF",
     ""
   );
