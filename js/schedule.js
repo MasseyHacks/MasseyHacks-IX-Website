@@ -547,16 +547,4 @@ window.addEventListener("load", () => {
       }
     }
   });
-
-  document.querySelector(".timeline-wrapper").addEventListener("wheel",event=>{
-    var el = document.querySelector(".timeline-wrapper");
-    if(el.scrollLeft+el.getBoundingClientRect().width>el.scrollWidth-10&&event.deltaY>0){
-      return;
-    }
-    if(el.scrollLeft<10&&event.deltaY<0){
-      return;
-    }
-    event.preventDefault();
-    el.scrollLeft += event.deltaY;
-  });
 });
