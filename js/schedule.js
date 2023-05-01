@@ -262,9 +262,9 @@ const initTimeLine = (timeLine) => {
     1,
     7,
     0.5,
-    2,
+    1,
     "Cupstacking",
-    "3:30PM - 5:00PM | Cafeteria",
+    "3:30PM - 4:30PM | Cafeteria",
     "#E1BDFF",
     "A MasseyHacks favourite is back in the game! Reach for the stars by creating the tallest possible cup tower!"
   );
@@ -417,7 +417,7 @@ const initTimeLine = (timeLine) => {
     0.75,
     1,
     "Intro to Python I",
-    "11:45AM - 12:45PM | Room 102",
+    "11:45AM - 12:45PM | Room 149",
     "#ABFF80",
     "Introduction to Python I is an introduction to programming and, by extension, how to think like a programmer. The inspiration for this workshop is the educational programming language Logo. Logo derives from the Greek logos, meaning word or thought. This language has been implemented and embraced by dozens of institutions from Apple to MIT since it's creation in 1967. Most people think of Logo as that language where you draw lines with a turtle. In the Introduction to Python I workshop we will be using the turtle module to introduce the fundamental programming concepts of variables, sequence, selection and repetition."
   );
@@ -437,7 +437,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     1,
     "Intro to Python II",
-    "2:30PM - 3:30PM | Room 102",
+    "2:30PM - 3:30PM | Room 149",
     "#ABFF80",
     "Introduction to Python II builds on the foundation of knowledge established in Introduction to Python I. We will introduce lists, functions and recursion to implement classic fractals like the Koch Snowflake and the Dragon curve."
   );
