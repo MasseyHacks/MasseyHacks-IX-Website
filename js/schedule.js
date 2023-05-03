@@ -547,4 +547,8 @@ window.addEventListener("load", () => {
       }
     }
   });
+
+  if("ontouchstart" in window){
+    document.getElementById("scroll_tip").style.display = "none";
+  }
 });
