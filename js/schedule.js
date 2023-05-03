@@ -296,7 +296,7 @@ const initTimeLine = (timeLine) => {
     "Minecraft Bedwars",
     "3:30AM - 4:45AM | Online",
     "#E1BDFF",
-    "Team up with a group of 5 to destroy your opponent’s base and claim bragging rights!"
+    ""
   );
   timeLine.setTimeCell(
     2,
@@ -419,7 +419,7 @@ const initTimeLine = (timeLine) => {
     "Intro to Python I",
     "11:45AM - 12:45PM | Room 149",
     "#ABFF80",
-    "Introduction to Python I is an introduction to programming and, by extension, how to think like a programmer. The inspiration for this workshop is the educational programming language Logo. Logo derives from the Greek logos, meaning word or thought. This language has been implemented and embraced by dozens of institutions from Apple to MIT since it's creation in 1967. Most people think of Logo as that language where you draw lines with a turtle. In the Introduction to Python I workshop we will be using the turtle module to introduce the fundamental programming concepts of variables, sequence, selection and repetition."
+    'Introduction to Python I is an introduction to programming and, by extension, how to think like a programmer. The inspiration for this workshop is the educational programming language Logo. Logo derives from the Greek logos, meaning word or thought. This language has been implemented and embraced by dozens of institutions from Apple to MIT since it\'s creation in 1967. Most people think of Logo as "that language where you draw lines with a turtle." In the Introduction to Python I workshop we will be using the turtle module to introduce the fundamental programming concepts of variables, sequence, selection and repetition.'
   );
   timeLine.setTimeCell(
     2,
@@ -432,17 +432,17 @@ const initTimeLine = (timeLine) => {
     "Looking to explore the exciting world of web development? Join us for our Intro to Flask workshop! Flask is a popular backend web framework that allows developers to quickly build web applications using Python. In this workshop, you'll learn how to create a basic Flask application, handle user input, and display data from a database. Flask is a great gateway into backend web development, making this workshop perfect for beginners who are interested in exploring this field. Don't miss out on the chance to jumpstart your web development skills with Flask!"
   );
   timeLine.setTimeCell(
-    2,
+    1,
     6,
     0.5,
     1,
     "Intro to Python II",
     "2:30PM - 3:30PM | Room 149",
     "#ABFF80",
-    "Introduction to Python II builds on the foundation of knowledge established in Introduction to Python I. We will introduce lists, functions and recursion to implement classic fractals like the Koch Snowflake and the Dragon curve."
+    "Introduction to Python II builds on the foundation of knowledge established in Introduction to Python I. The focus of the workshop will be on building the skills required to develop a simple game using pygame. We will set up a simple pygame template, explore basic drawing commands then focus on user interaction. We will develop the game of Pong and discuss how to approach a few other projects that are realistic to produce in a short period of time with minimal programming experience."
   );
   timeLine.setTimeCell(
-    1,
+    2,
     6,
     0.5,
     1,
