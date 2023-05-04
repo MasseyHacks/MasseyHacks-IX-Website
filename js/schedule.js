@@ -280,33 +280,23 @@ const initTimeLine = (timeLine) => {
   );
   timeLine.setTimeCell(
     2,
-    16,
+    15,
     0.5,
     1,
     "Skribbl.io",
-    "12:30AM - 1:30AM | Online",
+    "11:30AM - 12:30AM | Online",
     "#E1BDFF",
     ""
   );
   timeLine.setTimeCell(
     2,
-    19,
-    0.5,
-    1.25,
-    "Minecraft Bedwars",
-    "3:30AM - 4:45AM | Online",
-    "#E1BDFF",
-    ""
-  );
-  timeLine.setTimeCell(
-    2,
-    18,
+    17,
     0,
     1,
-    "League of Legends",
-    "2:00AM - 3:00AM | Online",
+    "Minecraft Bedwars",
+    "1:00AM - 2:00AM | Online",
     "#E1BDFF",
-    "Team up with a group of 5 to destroy your opponent's base and claim bragging rights!"
+    ""
   );
   timeLine.setTimeCell(
     2,
@@ -548,7 +538,7 @@ window.addEventListener("load", () => {
     }
   });
 
-  if("ontouchstart" in window){
+  if ("ontouchstart" in window) {
     document.getElementById("scroll_tip").style.display = "none";
   }
 });
