@@ -15,8 +15,8 @@
 .timeline-wrapper::-webkit-scrollbar-track {
   background-color: #0000003b;
   border-radius: 1rem 1rem 1rem 1rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .timeline-wrapper::-webkit-scrollbar-thumb {
@@ -185,7 +185,7 @@
   background-color: white;
   color: var(--dark-color);
 
-  border-radius: 6px;
+  border-radius: 10px;
   padding: 1em;
   box-shadow: 0 0 50px darkgray;
   position: absolute;
@@ -194,13 +194,13 @@
   left: 0;
 
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity .2s;
 }
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
   visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
+  -webkit-animation: fadeIn .2s ease-out;
+  animation: fadeIn .2s ease-out;
   opacity: 1;
 }
 .popuptext h2 {
