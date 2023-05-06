@@ -284,7 +284,7 @@ const initTimeLine = (timeLine) => {
     0.5,
     1,
     "Skribbl.io",
-    "11:30AM - 12:30AM | Online",
+    "11:30PM - 12:30AM | Online",
     "#E1BDFF",
     ""
   );
