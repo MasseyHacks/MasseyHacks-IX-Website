@@ -80,7 +80,8 @@ const countdown = function (_config) {
 
     // If the count down is over, write some text
     if (distance < 0) {
-      $(".countdown").innerHTML = "EXPIRED";
+      $(".countdown").style = "display:none";
+      $(".countdown-border").style = "display:none";
     }
   };
 
